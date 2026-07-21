@@ -82,8 +82,14 @@ git clone https://github.com/mphinance/momentum-mcp.git
 cd momentum-mcp
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+# Three-step install: pandas-ta hard-pins numba==0.61.2 which doesn't support
+# Python 3.14, so we install it separately and override numba.
+pip install fastmcp tradingview-screener yfinance pandas mplfinance matplotlib feedparser trafilatura scipy tradingview-ta chromadb
+pip install pandas-ta --no-deps
+pip install 'numba>=0.62'
 ```
+
+> **Why three steps?** `pandas-ta==0.4.71b0` declares `numba==0.61.2` as a hard dependency, but that `numba` version only supports Python `<3.14`. Installing `pandas-ta` with `--no-deps` skips the pin, and `numba>=0.62` (which has Python 3.14 wheels) is fully compatible at runtime — verified working.
 
 Test that everything works:
 

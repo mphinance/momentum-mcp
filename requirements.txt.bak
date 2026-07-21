@@ -14,10 +14,7 @@ yfinance>=0.2
 pandas>=2.0
 
 # Technical analysis indicators
-# NOTE: pandas-ta hard-pins numba==0.61.2 which doesn't support Python 3.14.
-# Install with --no-deps and use numba>=0.62 instead (verified compatible).
 pandas-ta>=0.3
-numba>=0.62
 
 # Candlestick chart rendering
 mplfinance>=0.12
