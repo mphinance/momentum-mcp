@@ -255,7 +255,7 @@ async def get_tv_analysis(ticker: str) -> dict[str, Any]:
 async def generate_chart(
     ticker: str, period: str = "6mo", interval: str = "1d",
     style: str = "dark", show_emas: bool = True,
-) -> dict[str, str]:
+) -> dict[str, Any]:
     """Generate a candlestick chart with EMA overlays (8/21/34/55/89).
     Returns base64-encoded PNG and file path."""
     return await _generate_chart(
