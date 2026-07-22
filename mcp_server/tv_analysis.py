@@ -31,12 +31,65 @@ INTERVAL_MAP = {
     "1M": Interval.INTERVAL_1_MONTH,
 }
 
+# Crypto ticker prefixes that indicate a crypto asset (vs. a forex pair).
+_CRYPTO_PREFIXES = (
+    "BTC", "ETH", "SOL", "XRP", "ADA", "DOGE", "BNB", "MATIC", "DOT",
+    "AVAX", "LINK", "LTC", "BCH", "XLM", "TRX", "ATOM",
+)
+
+# Default exchanges to try per TradingView screener.
+_DEFAULT_EXCHANGES = {
+    "america": ["NASDAQ", "NYSE", "AMEX"],
+    "cfd":     ["OANDA", "FXCM", "FOREXCOM"],
+    "crypto":  ["BINANCE", "COINBASE", "KRAKEN", "BITSTAMP"],
+}
+
+
+def _detect_screeners(ticker: str) -> list[str]:
+    """Return an ordered list of TradingView screeners to try for ``ticker``.
+
+    TradingView's TA endpoint is partitioned by *screener* (asset class),
+    not just by symbol. The wrong screener always returns
+    ``"Exchange or symbol not found"`` even when the symbol is valid
+    elsewhere. We rank screeners by symbol shape so common cases resolve
+    on the first try.
+
+    Detection rules (first match wins):
+
+    - ``BTCUSD`` / ``ETHUSD`` / ``...USDT`` → ``crypto`` first
+    - 6-char ``XYZUSD`` that isn't crypto → ``cfd`` (forex/commodities)
+    - TradingView-native ``!`` suffix (e.g. ``GC1!``) → ``cfd``
+    - yfinance-style ``=`` suffix (e.g. ``GC=F``) → ``america`` then ``cfd``
+    - Anything else → ``america`` (US equities)
+    """
+    t = ticker.upper().strip()
+
+    # Crypto: explicit prefix or USDT suffix
+    if any(t.startswith(p) for p in _CRYPTO_PREFIXES) or t.endswith("USDT"):
+        return ["crypto", "cfd", "america"]
+
+    # Forex/commodity CFD: 6-char pair ending in USD (XAUUSD, EURUSD, GBPUSD)
+    if len(t) == 6 and t.endswith("USD"):
+        return ["cfd", "america"]
+
+    # TradingView-native futures/contract notation
+    if t.endswith("!"):
+        return ["cfd", "america"]
+
+    # yfinance-style futures (GC=F, CL=F, ES=F) — try US futures venues first
+    if "=" in t:
+        return ["america", "cfd"]
+
+    # Default: US equity
+    return ["america"]
+
 
 @smart_cache(open_ttl=300, closed_ttl=3600)
 async def get_tv_analysis(
     ticker: str,
     interval: str = "1d",
     exchange: str = "NASDAQ",
+    screener: str | None = None,
 ) -> dict[str, Any]:
     """
     Get TradingView technical analysis consensus for a ticker.
@@ -45,25 +98,51 @@ async def get_tv_analysis(
     from 26 technical indicators, plus breakdowns by moving averages and oscillators.
 
     Args:
-        ticker: Stock ticker symbol (e.g., NVDA, AAPL, TSLA).
+        ticker: Ticker symbol. Works across asset classes:
+
+            - **US equities**: ``NVDA``, ``AAPL``, ``TSLA`` (screener=america)
+            - **Forex / commodity CFDs**: ``XAUUSD``, ``EURUSD``, ``GBPUSD``
+              (screener=cfd, exchange=OANDA)
+            - **Crypto**: ``BTCUSD``, ``ETHUSD``, ``SOLUSD``
+              (screener=crypto, exchange=BINANCE)
+            - **Futures**: ``GC=F`` (yfinance notation) or ``GC1!``
+              (TradingView notation)
+
         interval: Timeframe — 1m, 5m, 15m, 1h, 4h, 1d (default), 1w, 1M.
-        exchange: Exchange name. Default: NASDAQ. Try NYSE, AMEX for others.
+        exchange: Exchange name. Default: NASDAQ. Ignored if ``screener``
+            is set explicitly.
+        screener: TradingView screener — ``"america"``, ``"cfd"``, or
+            ``"crypto"``. If ``None`` (default), auto-detected from the
+            symbol shape. Set explicitly to bypass detection.
     """
     tv_interval = INTERVAL_MAP.get(interval, Interval.INTERVAL_1_DAY)
+    symbol = ticker.upper().strip()
 
-    # Try multiple exchanges if the first one fails
-    exchanges_to_try = [exchange]
-    if exchange == "NASDAQ":
-        exchanges_to_try += ["NYSE", "AMEX"]
-    elif exchange == "NYSE":
-        exchanges_to_try += ["NASDAQ", "AMEX"]
+    # Build the ordered list of (screener, exchange) candidates to try.
+    if screener:
+        # User pinned the screener — honor it, but still try fallback exchanges.
+        screeners = [screener]
+    else:
+        screeners = _detect_screeners(symbol)
 
-    last_error = None
-    for exch in exchanges_to_try:
+    # If the caller passed an exchange for the default screener, prefer it first
+    # within that screener's bucket.
+    candidates: list[tuple[str, str]] = []
+    for scr in screeners:
+        exchanges = _DEFAULT_EXCHANGES.get(scr, [])
+        if scr == screeners[0] and exchange in exchanges:
+            # Try the user-provided exchange first for the primary screener
+            candidates.append((scr, exchange))
+            exchanges = [e for e in exchanges if e != exchange]
+        for exch in exchanges:
+            candidates.append((scr, exch))
+
+    last_error: Exception | None = None
+    for scr, exch in candidates:
         try:
             handler = TA_Handler(
-                symbol=ticker.upper(),
-                screener="america",
+                symbol=symbol,
+                screener=scr,
                 exchange=exch,
                 interval=tv_interval,
             )
@@ -75,8 +154,9 @@ async def get_tv_analysis(
             osc_rec = analysis.oscillators
 
             return {
-                "ticker": ticker.upper(),
+                "ticker": symbol,
                 "exchange": exch,
+                "screener": scr,
                 "interval": interval,
                 "recommendation": summary.get("RECOMMENDATION", "N/A"),
                 "summary": {
@@ -118,11 +198,12 @@ async def get_tv_analysis(
 
         except Exception as e:
             last_error = e
-            logger.debug("TV-TA failed for %s on %s: %s", ticker, exch, e)
+            logger.debug("TV-TA failed for %s on %s/%s: %s", symbol, scr, exch, e)
             continue
 
-    logger.warning("TV-TA: all exchanges failed for %s: %s", ticker, last_error)
+    logger.warning("TV-TA: all candidates failed for %s: %s", symbol, last_error)
     return {
-        "ticker": ticker.upper(),
+        "ticker": symbol,
         "error": f"Could not fetch TradingView analysis: {last_error}",
+        "tried": [{"screener": s, "exchange": e} for s, e in candidates],
     }

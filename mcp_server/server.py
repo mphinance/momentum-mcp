@@ -240,11 +240,40 @@ async def analyze_technicals(ticker: str, period: str = "1y") -> dict[str, Any]:
 
 
 @mcp.tool()
-async def get_tv_analysis(ticker: str) -> dict[str, Any]:
+async def get_tv_analysis(
+    ticker: str,
+    interval: str = "1d",
+    exchange: str = "NASDAQ",
+    screener: str | None = None,
+) -> dict[str, Any]:
     """Get TradingView 26-indicator technical consensus for a ticker.
+
     Returns STRONG_BUY/BUY/NEUTRAL/SELL/STRONG_SELL with buy/sell/neutral
-    counts for both oscillators and moving averages."""
-    return await _get_tv_analysis(ticker=ticker)
+    counts for both oscillators and moving averages.
+
+    **Screener selection** — TradingView partitions symbols by asset class.
+    Pick the right ``screener`` for the instrument or leave it ``None`` to
+    auto-detect from the symbol shape:
+
+    | Asset class            | Example symbols                | screener |
+    |------------------------|--------------------------------|----------|
+    | US equities            | NVDA, AAPL, TSLA               | america  |
+    | Forex / commodity CFDs | XAUUSD, EURUSD, GBPUSD, USDJPY | cfd      |
+    | Crypto                 | BTCUSD, ETHUSD, SOLUSD         | crypto   |
+    | Futures (yfinance)     | GC=F, CL=F, ES=F               | america  |
+    | Futures (TradingView)  | GC1!, ES1!, CL1!               | cfd      |
+
+    Args:
+        ticker: Symbol as shown above.
+        interval: 1m, 5m, 15m, 1h, 4h, 1d (default), 1w, 1M.
+        exchange: Exchange within the screener. Defaults to NASDAQ.
+            Ignored when ``screener`` is set explicitly.
+        screener: ``"america"``, ``"cfd"``, or ``"crypto"``. ``None``
+            (default) auto-detects from the symbol.
+    """
+    return await _get_tv_analysis(
+        ticker=ticker, interval=interval, exchange=exchange, screener=screener
+    )
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
