@@ -26,3 +26,12 @@ charts/
 dist/
 build/
 *.egg-info/
+
+# Environment files (real secrets — never commit)
+.env
+.env.local
+.env.*.local
+# But keep .env.example tracked
+!.env.example
+
+data
