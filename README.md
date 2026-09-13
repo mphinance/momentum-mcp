@@ -17,17 +17,20 @@
 
 ---
 
-> **This toolkit grew into [Vesper](https://github.com/mphinance/trading-agent)** — a LangGraph
-> trading agent for Webull. Its `mcp_server/` is a newer, larger, actively-maintained sibling of
-> this server (56 tools: adds SEC EDGAR filings and TickerTrace institutional ETF flow to
-> everything below), still with no broker credentials and no order path. This repo stays the
-> lighter standalone version.
+> This toolkit shares its lineage with [Vesper](https://github.com/mphinance/trading-agent), a
+> LangGraph trading agent for Webull — its `mcp_server/` is a separate, credential-heavier
+> superset (adds a live-account owner mode and, eventually, an order path). This repo stays the
+> standalone version: point any MCP host at it, no broker anywhere near it.
 
 ## Changelog
 
-**September 13, 2026 — Docs Catch-Up**
+**September 13, 2026 — SEC EDGAR + TickerTrace, and a Docs Catch-Up**
+- **21 new tools, both credential-free:** `get_sec_filings`, `get_sec_financials`,
+  `get_shares_outstanding`, `get_stakes_held` (SEC EDGAR — no API key, just a `SEC_USER_AGENT`
+  contact string) and 17 `etf_*` tools (TickerTrace — daily institutional ETF holdings across 71
+  funds, deliberately open with no key at all). Neither needs a TraderDaddy Pro subscription.
 - Tools table and Claude Desktop instructions were still describing 6-35 tools; corrected to the
-  actual 52 registered in `mcp_server/server.py`, grouped by category.
+  actual 73 now registered in `mcp_server/server.py`, grouped by category.
 - Fixed a License section that said MIT while the committed `LICENSE` file is Apache-2.0 — the
   README now matches the file.
 
@@ -41,7 +44,7 @@
 
 ## What Is This?
 
-**momentum-mcp** turns any MCP-compatible AI assistant into a quantitative trading analyst. Instead of copy-pasting tickers into Yahoo Finance and screenshotting charts, your AI agent has access to 52 institutional-grade tools to:
+**momentum-mcp** turns any MCP-compatible AI assistant into a quantitative trading analyst. Instead of copy-pasting tickers into Yahoo Finance and screenshotting charts, your AI agent has access to 73 institutional-grade tools to:
 
 - 🔍 **Screen the entire market** in seconds — find overbought stocks, unusual volume spikes, new 52-week highs
 - 📊 **Pull clean OHLCV data** for any ticker, any timeframe — ready for analysis, no CSV wrangling
@@ -60,7 +63,7 @@ All of this happens through the [Model Context Protocol](https://modelcontextpro
 
 ## Tools
 
-52 tools across ten groups:
+73 tools across twelve groups:
 
 | Group | Tools |
 |---|---|
@@ -74,6 +77,19 @@ All of this happens through the [Model Context Protocol](https://modelcontextpro
 | **Backtesting** | `backtest_strategy`, `save_strategy`, `list_strategies`, `get_learned_patterns`, `sweep_strategy`, `walk_forward_test` |
 | **Knowledge & Journal** | `search_knowledge` (139-book RAG), `log_conviction`, `get_track_record`, `generate_alpha_card` |
 | **News** | `fetch_ticker_news`, `extract_article_text` |
+| **SEC EDGAR** (no API key — see below) | `get_sec_filings`, `get_sec_financials`, `get_shares_outstanding`, `get_stakes_held` |
+| **Institutional ETF Flow** (no API key at all) | `etf_briefing`, `etf_signals`, `etf_institutional_flow`, `etf_institutional_trend`, `etf_holdings_changes`, `etf_divergences`, `etf_layering_patterns`, `etf_sector_flow`, `etf_stock_activity`, `etf_fund_detail`, `etf_list_funds`, `etf_list_tickers`, `etf_income_overview`, `etf_income_fund_detail`, `etf_options_listings`, `etf_signal_performance`, `etf_global_stats` |
+
+**SEC EDGAR needs one free env var**, no subscription: SEC's `User-Agent` header IS the
+credential, and it just has to identify you.
+
+```bash
+export SEC_USER_AGENT="Your Project Name (contact: you@example.com)"
+```
+
+Without it, `get_sec_filings` and friends return a clean `{"error": ...}` naming the missing
+variable rather than crashing. The 17 `etf_*` tools need nothing at all —
+[api.tickertrace.pro](https://api.tickertrace.pro) is deliberately open, no key or account.
 
 ## Quickstart
 
@@ -84,7 +100,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 # Three-step install: pandas-ta hard-pins numba==0.61.2 which doesn't support
 # Python 3.14, so we install it separately and override numba.
-pip install fastmcp tradingview-screener yfinance pandas mplfinance matplotlib feedparser trafilatura scipy tradingview-ta chromadb
+pip install fastmcp tradingview-screener yfinance pandas mplfinance matplotlib feedparser trafilatura scipy tradingview-ta chromadb requests httpx
 pip install pandas-ta --no-deps
 pip install 'numba>=0.62'
 ```
@@ -125,7 +141,7 @@ The most popular MCP client. Add to your `claude_desktop_config.json` (located a
 }
 ```
 
-Restart Claude Desktop. You'll see the 🔨 tools icon — click it to verify all 52 tools are loaded.
+Restart Claude Desktop. You'll see the 🔨 tools icon — click it to verify all 73 tools are loaded.
 
 ---
 
@@ -246,12 +262,17 @@ momentum-mcp/
 ├── README.md
 └── mcp_server/
     ├── __init__.py
-    ├── server.py            # FastMCP entry point — registers all tools
-    ├── screener.py          # TradingView stock scanner (6 presets)
+    ├── server.py            # FastMCP entry point — registers all 73 tools
+    ├── screener.py          # TradingView stock scanner
     ├── data.py              # yfinance OHLCV with async wrapper
-    ├── technicals.py        # pandas-ta RSI(14) & MACD(12,26,9)
+    ├── technicals.py        # pandas-ta indicator suite
     ├── charts.py            # mplfinance candlestick + volume charts
-    └── news.py              # feedparser RSS + trafilatura extraction
+    ├── news.py              # feedparser RSS + trafilatura extraction
+    ├── edgar.py             # SEC EDGAR client — no API key, User-Agent only
+    ├── edgar_tools.py        # get_sec_filings/financials/shares_outstanding/stakes_held
+    ├── tickertrace.py       # api.tickertrace.pro client — no key, no account
+    ├── tickertrace_tools.py # 17 etf_* institutional ETF holdings tools
+    └── ...                  # options, backtest, screeners, macro/regime, knowledge base
 ```
 
 ## Tech Stack
@@ -265,6 +286,8 @@ momentum-mcp/
 | [mplfinance](https://pypi.org/project/mplfinance/) | Financial chart rendering |
 | [feedparser](https://pypi.org/project/feedparser/) | RSS/Atom feed parsing |
 | [trafilatura](https://pypi.org/project/trafilatura/) | Web article text extraction |
+| [requests](https://pypi.org/project/requests/) | SEC EDGAR client (no API key, just a User-Agent) |
+| [httpx](https://pypi.org/project/httpx/) | TickerTrace client (api.tickertrace.pro, no key) |
 
 ## Example Prompts
 

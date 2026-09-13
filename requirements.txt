@@ -35,3 +35,9 @@ tradingview-ta>=3.3
 
 # Required by mcp_server/knowledge.py
 chromadb>=1.0
+
+# Required by mcp_server/edgar.py (SEC EDGAR — no API key, just a User-Agent string)
+requests>=2.31
+
+# Required by mcp_server/tickertrace.py (api.tickertrace.pro — no key, no account)
+httpx>=0.27

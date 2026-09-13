@@ -61,6 +61,13 @@ from mcp_server.traderdaddy import (
     get_politician_trades as _get_politician_trades,
     get_earnings_flow as _get_earnings_flow,
 )
+from mcp_server.edgar_tools import (
+    get_sec_filings as _get_sec_filings,
+    get_sec_financials as _get_sec_financials,
+    get_shares_outstanding as _get_shares_outstanding,
+    get_stakes_held as _get_stakes_held,
+)
+from mcp_server.tickertrace_tools import register_tickertrace_tools
 from mcp_server.position_sizer import calculate_position_size as _calculate_position_size
 from mcp_server.vcp_screener import screen_vcp as _screen_vcp
 from mcp_server.market_top import detect_market_top as _detect_market_top
@@ -94,15 +101,18 @@ mcp = FastMCP(
     "momentum",
     instructions=(
         "Welcome to the Momentum MCP Server — powered by TraderDaddy Pro.\n\n"
-        "This server provides 33 quantitative trading tools for AI agents:\n"
+        "This server provides 73 quantitative trading tools for AI agents:\n"
         "• Stock screening (22 presets + custom filters)\n"
         "• Technical analysis (24 indicators: EMA stack, RSI, MACD, ADX, ATR, Bollinger, etc.)\n"
         "• Options analysis via VoPR™ engine (vol surface, Black-Scholes, A-F grading)\n"
         "• Auto-find best options to sell/buy/straddle\n"
         "• Institutional flow data, GEX, sector rotation, politician trades\n"
         "• Backtesting suite (6 presets, walk-forward validation, multi-ticker sweep)\n"
-        "• 139-book trading knowledge base (RAG search)\n\n"
-        "Data sources: yfinance, TradingView, TraderDaddy Pro REST API, ChromaDB.\n"
+        "• 139-book trading knowledge base (RAG search)\n"
+        "• SEC EDGAR primary-source filings, XBRL financials, AS-FILER 13D/13G stakes\n"
+        "• Daily institutional ETF holdings intelligence across 71 funds (etf_* tools)\n\n"
+        "Data sources: yfinance, TradingView, TraderDaddy Pro REST API, SEC EDGAR, "
+        "TickerTrace, ChromaDB.\n"
         "Rate limited to 30 requests/minute per IP. Results are cached with "
         "market-hours-aware TTL (shorter during market open for freshness).\n\n"
         "Learn more at https://traderdaddy.pro"
@@ -845,6 +855,54 @@ async def get_momentum_pulse(
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
+# SEC EDGAR — filings, financials, shares outstanding, AS-FILER 13D/13G stakes
+# No API key: sec.gov's User-Agent header IS the credential (set SEC_USER_AGENT
+# in .env to a "Your Name (contact@you.com)" string — it's free, not a subscription).
+# ═══════════════════════════════════════════════════════════════════════════════
+
+@mcp.tool()
+async def get_sec_filings(
+    ticker: str, months: int = 12, forms: list[str] | None = None
+) -> dict[str, Any]:
+    """SEC EDGAR filing index straight from the primary source: the
+    recent-events sweep. `forms` narrows to types like ["8-K", "10-Q"]."""
+    return await _get_sec_filings(ticker=ticker, months=months, forms=forms)
+
+
+@mcp.tool()
+async def get_sec_financials(
+    ticker: str, periods: int = 8, annual: bool = True
+) -> dict[str, Any]:
+    """Multi-period financials from SEC XBRL, including the accrual gap
+    (net income minus operating cash flow: positive means earnings are
+    accrual-driven rather than cash-backed)."""
+    return await _get_sec_financials(ticker=ticker, periods=periods, annual=annual)
+
+
+@mcp.tool()
+async def get_shares_outstanding(ticker: str) -> dict[str, Any]:
+    """Cover-page share count straight from the 10-Q/10-K filing, not an
+    aggregator's derived figure. Flags an implausible diluted count instead
+    of silently returning it."""
+    return await _get_shares_outstanding(ticker=ticker)
+
+
+@mcp.tool()
+async def get_stakes_held(ticker: str, months: int = 24) -> dict[str, Any]:
+    """AS-FILER 13D/13G: stakes this company holds in OTHER public companies
+    (e.g. GME's 9.8% stake in eBay), not who owns this ticker."""
+    return await _get_stakes_held(ticker=ticker, months=months)
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# TickerTrace — daily institutional ETF holdings intelligence, 17 tools
+# api.tickertrace.pro is deliberately open: no key, no header, no account.
+# ═══════════════════════════════════════════════════════════════════════════════
+
+register_tickertrace_tools(mcp)
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
 # Entry point (standalone mode)
 # ═══════════════════════════════════════════════════════════════════════════════
 
@@ -855,7 +913,7 @@ if __name__ == "__main__":
     port = int(os.getenv("MCP_PORT", "8401"))
     sse_path = os.getenv("MCP_SSE_PATH", "/mcp/sse")
     logger.info(
-        "Starting momentum MCP server on %s:%s%s (transport=%s, 35 tools registered)...",
+        "Starting momentum MCP server on %s:%s%s (transport=%s, 73 tools registered)...",
         host, port, sse_path, transport,
     )
     if transport == "sse":
