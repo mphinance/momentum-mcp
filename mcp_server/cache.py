@@ -137,7 +137,7 @@ def smart_cache(open_ttl: int = 300, closed_ttl: int = 3600):
         async def wrapper(*args, **kwargs):
             global _cache_hits, _cache_misses
 
-            key = _make_key(func.__name__, args, kwargs)
+            key = _make_key(f"{func.__module__}.{func.__qualname__}", args, kwargs)
             now = time.time()
 
             # ── 1. Check cache ──

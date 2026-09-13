@@ -21,8 +21,10 @@ async def get_fundamentals(ticker: str) -> dict[str, Any]:
     """Fetch fundamental data for a ticker via yfinance."""
     import yfinance as yf
 
+    ticker = ticker.strip().upper()
+
     try:
-        stock = yf.Ticker(ticker.upper())
+        stock = yf.Ticker(ticker)
         info = stock.info or {}
     except Exception as e:
         logger.error("Failed to fetch fundamentals for %s: %s", ticker, e)

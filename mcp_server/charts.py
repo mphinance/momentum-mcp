@@ -151,7 +151,12 @@ async def generate_chart(
     # Render in a background thread
     def _render() -> tuple[str, str]:
         CHARTS_DIR.mkdir(parents=True, exist_ok=True)
-        filename = f"{ticker}_{period}_{interval}.png"
+        # Sanitize ticker/period/interval before using them in a filename —
+        # user-supplied strings must not be able to escape CHARTS_DIR via "/" or "..".
+        safe_ticker = "".join(c for c in ticker if c.isalnum() or c in "-.") or "UNKNOWN"
+        safe_period = "".join(c for c in period if c.isalnum()) or "period"
+        safe_interval = "".join(c for c in interval if c.isalnum()) or "interval"
+        filename = f"{safe_ticker}_{safe_period}_{safe_interval}.png"
         filepath = CHARTS_DIR / filename
 
         plot_kwargs: dict[str, Any] = {

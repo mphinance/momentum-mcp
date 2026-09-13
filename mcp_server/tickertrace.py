@@ -116,11 +116,11 @@ def get_sector_flow(category: Category | None = None) -> dict[str, Any]:
 # ── Lookups ──────────────────────────────────────────────────────────────────
 
 def get_stock_activity(ticker: str) -> dict[str, Any]:
-    return _fetch(f"/api/v1/stock/{ticker.upper()}")
+    return _fetch(f"/api/v1/stock/{ticker.strip().upper()}")
 
 
 def get_fund_detail(fund: str) -> dict[str, Any]:
-    return _fetch(f"/api/v1/fund/{fund.upper()}")
+    return _fetch(f"/api/v1/fund/{fund.strip().upper()}")
 
 
 def list_all_funds(category: Category | None = None) -> dict[str, Any]:
@@ -142,7 +142,7 @@ def get_income_overview() -> dict[str, Any]:
 
 
 def get_income_fund_detail(fund: str) -> dict[str, Any]:
-    return _fetch(f"/api/v1/income/{fund.upper()}")
+    return _fetch(f"/api/v1/income/{fund.strip().upper()}")
 
 
 def get_options_listings() -> dict[str, Any]:

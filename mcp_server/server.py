@@ -196,7 +196,10 @@ async def run_stock_screen(
     most_volatile, pre_market_gainers, pre_market_losers, pre_market_active,
     pre_market_gappers, after_hours_gainers, after_hours_losers, after_hours_active.
     """
-    return await _run_stock_screen(preset=preset, limit=limit)
+    try:
+        return await _run_stock_screen(preset=preset, limit=limit)
+    except Exception as e:
+        return {"error": str(e)}
 
 
 @mcp.tool()
@@ -233,7 +236,10 @@ async def get_historical_data(
         period: 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max.
         interval: 1m, 5m, 15m, 30m, 1h, 1d, 1wk, 1mo.
     """
-    return await _get_historical_data(ticker=ticker, period=period, interval=interval)
+    try:
+        return await _get_historical_data(ticker=ticker, period=period, interval=interval)
+    except Exception as e:
+        return [{"error": str(e)}]
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -297,10 +303,13 @@ async def generate_chart(
 ) -> dict[str, Any]:
     """Generate a candlestick chart with EMA overlays (8/21/34/55/89).
     Returns base64-encoded PNG and file path."""
-    return await _generate_chart(
-        ticker=ticker, period=period, interval=interval,
-        style=style, show_emas=show_emas,
-    )
+    try:
+        return await _generate_chart(
+            ticker=ticker, period=period, interval=interval,
+            style=style, show_emas=show_emas,
+        )
+    except Exception as e:
+        return {"error": str(e), "ticker": ticker}
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -415,7 +424,7 @@ async def generate_alpha_card(ticker: str, sam_take: str = "") -> dict[str, Any]
 async def search_knowledge(query: str, n_results: int = 5) -> dict[str, Any]:
     """Search Sam's library of 139 trading books + methodology guides.
     Returns relevant passages with source citations."""
-    return await _search_knowledge(query=query, n_results=n_results)
+    return await _search_knowledge(query=query, top_k=n_results)
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -427,11 +436,12 @@ async def log_conviction(
     ticker: str, direction: str, conviction: str,
     thesis: str, entry_price: float | None = None,
 ) -> dict[str, Any]:
-    """Log a trade conviction to the journal. Direction: long/short.
-    Conviction: high/medium/low. Include a thesis for future review."""
+    """Log a trade conviction to the journal. Direction: bullish/bearish/neutral.
+    Conviction: high/medium/low. Include a thesis for future review.
+    Entry price is fetched live automatically; entry_price is accepted but unused."""
+    confidence = {"high": 5, "medium": 3, "low": 1}.get(str(conviction).strip().lower(), 3)
     return await _log_conviction(
-        ticker=ticker, direction=direction, conviction=conviction,
-        thesis=thesis, entry_price=entry_price,
+        ticker=ticker, direction=direction, confidence=confidence, reasoning=thesis,
     )
 
 
@@ -455,16 +465,24 @@ async def backtest_strategy(
     ema_crossover, rsi_bounce, macd_momentum, bollinger_squeeze,
     golden_cross, ema_stack_breakout. Returns Sharpe, win rate, CAGR, etc."""
     return await _backtest_strategy(
-        ticker=ticker, strategy=strategy, period=period,
+        ticker=ticker, strategy_name=strategy, period=period,
         initial_capital=initial_capital,
         stop_loss_pct=stop_loss_pct, take_profit_pct=take_profit_pct,
     )
 
 
 @mcp.tool()
-async def save_strategy(name: str, conditions: dict[str, Any]) -> dict[str, Any]:
+async def save_strategy(
+    name: str,
+    entry_conditions: list[dict[str, Any]],
+    exit_conditions: list[dict[str, Any]],
+    description: str = "",
+) -> dict[str, Any]:
     """Save a custom strategy to disk for re-use."""
-    return await _save_strategy(name=name, conditions=conditions)
+    return await _save_strategy(
+        name=name, entry_conditions=entry_conditions,
+        exit_conditions=exit_conditions, description=description,
+    )
 
 
 @mcp.tool()
@@ -485,7 +503,7 @@ async def sweep_strategy(
     period: str = "2y",
 ) -> dict[str, Any]:
     """Run a strategy across multiple tickers (max 20). Ranks by Sharpe/return."""
-    return await _sweep_strategy(tickers=tickers, strategy=strategy, period=period)
+    return await _sweep_strategy(tickers=tickers, strategy_name=strategy, period=period)
 
 
 @mcp.tool()
@@ -495,7 +513,7 @@ async def walk_forward_test(
 ) -> dict[str, Any]:
     """Walk-forward validation: splits data into n folds, detects overfitting."""
     return await _walk_forward_test(
-        ticker=ticker, strategy=strategy, n_folds=n_folds, period=period,
+        ticker=ticker, strategy_name=strategy, n_folds=n_folds, total_period=period,
     )
 
 

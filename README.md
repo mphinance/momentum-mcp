@@ -20,7 +20,10 @@
 > This toolkit shares its lineage with [Vesper](https://github.com/mphinance/trading-agent), a
 > LangGraph trading agent for Webull — its `mcp_server/` is a separate, credential-heavier
 > superset (adds a live-account owner mode and, eventually, an order path). This repo stays the
-> standalone version: point any MCP host at it, no broker anywhere near it.
+> standalone version: point any MCP host at it, no broker anywhere near it. It's also part of the
+> [mphinance AI trading stack](https://github.com/mphinance/alpha-skills) — if you want packaged
+> Claude/Gemini Skills (screeners, regime detection, backtesting playbooks) that can call these
+> tools instead of a paid API, see [alpha-skills](https://github.com/mphinance/alpha-skills).
 
 ## Changelog
 
