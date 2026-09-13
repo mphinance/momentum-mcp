@@ -17,7 +17,19 @@
 
 ---
 
+> **This toolkit grew into [Vesper](https://github.com/mphinance/trading-agent)** — a LangGraph
+> trading agent for Webull. Its `mcp_server/` is a newer, larger, actively-maintained sibling of
+> this server (56 tools: adds SEC EDGAR filings and TickerTrace institutional ETF flow to
+> everything below), still with no broker credentials and no order path. This repo stays the
+> lighter standalone version.
+
 ## Changelog
+
+**September 13, 2026 — Docs Catch-Up**
+- Tools table and Claude Desktop instructions were still describing 6-35 tools; corrected to the
+  actual 52 registered in `mcp_server/server.py`, grouped by category.
+- Fixed a License section that said MIT while the committed `LICENSE` file is Apache-2.0 — the
+  README now matches the file.
 
 **April 26, 2026 — The "Constellation" Update**
 - **Massive 35-Tool Expansion:** Merged in the complete Phase 2 toolset from the internal workspace.
@@ -29,7 +41,7 @@
 
 ## What Is This?
 
-**momentum-mcp** turns any MCP-compatible AI assistant into a quantitative trading analyst. Instead of copy-pasting tickers into Yahoo Finance and screenshotting charts, your AI agent has access to 35 institutional-grade tools to:
+**momentum-mcp** turns any MCP-compatible AI assistant into a quantitative trading analyst. Instead of copy-pasting tickers into Yahoo Finance and screenshotting charts, your AI agent has access to 52 institutional-grade tools to:
 
 - 🔍 **Screen the entire market** in seconds — find overbought stocks, unusual volume spikes, new 52-week highs
 - 📊 **Pull clean OHLCV data** for any ticker, any timeframe — ready for analysis, no CSV wrangling
@@ -48,14 +60,20 @@ All of this happens through the [Model Context Protocol](https://modelcontextpro
 
 ## Tools
 
-| Tool | What It Does |
+52 tools across ten groups:
+
+| Group | Tools |
 |---|---|
-| `run_stock_screen` | Scan for stocks by preset: most active, new highs/lows, overbought, oversold, high relative volume |
-| `get_historical_data` | Fetch OHLCV candlestick data — any ticker, any period, any interval |
-| `analyze_technicals` | Compute RSI(14) + MACD(12,26,9) and get a plain-English analysis summary |
-| `generate_chart` | Render a candlestick chart with stacked EMA overlays (8/21/34/55/89) + volume → PNG + base64 |
-| `fetch_ticker_news` | Pull recent headlines from Yahoo Finance & Google News RSS feeds |
-| `extract_article_text` | Extract the full article body from any URL (strips ads, nav, paywalls) |
+| **Screening & Data** | `run_stock_screen`, `run_custom_screen`, `get_historical_data`, `get_fundamentals` |
+| **Technicals & Charts** | `analyze_technicals` (24 indicators), `get_tv_analysis` (26-indicator TradingView consensus), `generate_chart` |
+| **Options — VoPR™ Engine** | `analyze_options_setup`, `find_best_to_sell`, `find_best_to_buy`, `sweep_setups`, `calculate_position_size` |
+| **Institutional Flow & Gamma** | `get_market_pulse`, `get_market_stats`, `get_put_call_ratios`, `get_sector_flow`, `get_unusual_activity`, `get_signals`, `get_gex_overview`, `get_earnings_calendar`, `get_earnings_flow`, `get_politician_trades`, `get_alpha_signals` |
+| **Pattern Screeners** | `screen_vcp`, `screen_pead`, `screen_canslim`, `analyze_pair` |
+| **Market Structure & Regime** | `detect_market_top`, `detect_ftd`, `get_exposure_recommendation`, `get_market_environment`, `detect_macro_regime`, `analyze_breadth`, `analyze_uptrend_participation`, `detect_themes`, `analyze_recent_gap`, `detect_bubble_risk`, `get_momentum_pulse` |
+| **Scenario & Modeling** | `analyze_scenario`, `model_price_distribution` |
+| **Backtesting** | `backtest_strategy`, `save_strategy`, `list_strategies`, `get_learned_patterns`, `sweep_strategy`, `walk_forward_test` |
+| **Knowledge & Journal** | `search_knowledge` (139-book RAG), `log_conviction`, `get_track_record`, `generate_alpha_card` |
+| **News** | `fetch_ticker_news`, `extract_article_text` |
 
 ## Quickstart
 
@@ -101,7 +119,7 @@ The most popular MCP client. Add to your `claude_desktop_config.json` (located a
 }
 ```
 
-Restart Claude Desktop. You'll see the 🔨 tools icon — click it to verify all 6 tools are loaded.
+Restart Claude Desktop. You'll see the 🔨 tools icon — click it to verify all 52 tools are loaded.
 
 ---
 
@@ -258,4 +276,4 @@ Once connected, try asking your AI assistant:
 
 ## License
 
-MIT — do whatever you want with it.
+Apache-2.0 — see [`LICENSE`](LICENSE).
