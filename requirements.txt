@@ -23,3 +23,12 @@ matplotlib>=3.7
 # News & article extraction
 feedparser>=6.0
 trafilatura>=2.0
+
+# Required by mcp_server/options_greeks.py (Black-Scholes)
+scipy>=1.10
+
+# Required by mcp_server/tv_analysis.py
+tradingview-ta>=3.3
+
+# Required by mcp_server/knowledge.py
+chromadb>=1.0

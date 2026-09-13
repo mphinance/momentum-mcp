@@ -235,7 +235,8 @@ async def analyze_technicals(ticker: str, period: str = "1y") -> dict[str, Any]:
     """Compute 24 technical indicators: EMA 8/21/34/55/89, SMA 50/100/200,
     RSI(14), MACD(12,26,9), ADX(14), ATR(14), Williams %R, Stochastic,
     Bollinger Bands, CCI(20). Returns latest readings + analysis summary."""
-    return await _analyze_technicals(ticker=ticker, period=period)
+    res = await _analyze_technicals(ticker=ticker, period=period)
+    return res.dict()
 
 
 @mcp.tool()
@@ -276,10 +277,11 @@ async def analyze_options_setup(
     """VoPR™ engine: composite realized vol (4 estimators), VRP ratio,
     Black-Scholes Delta/Theta, A-F grade. Use when you need a specific
     DTE/strike analysis. Pass budget for strike recommendations."""
-    return await _analyze_options_setup(
+    res = await _analyze_options_setup(
         ticker=ticker, option_type=option_type, dte=dte,
         budget=budget, contracts=contracts, iv_override=iv_override,
     )
+    return res.dict()
 
 
 @mcp.tool()
@@ -287,7 +289,8 @@ async def find_best_to_sell(ticker: str, budget: float | None = None) -> dict[st
     """Auto-find the best puts and calls to SELL. Scans 7-45 DTE across
     multiple strikes. Scores on RoC, VoPR grade, theta efficiency, delta
     sweet spot. Returns top 3 puts + top 3 calls."""
-    return await _find_best_to_sell(ticker=ticker, budget=budget)
+    res = await _find_best_to_sell(ticker=ticker, budget=budget)
+    return res.dict()
 
 
 @mcp.tool()
@@ -295,7 +298,8 @@ async def find_best_to_buy(ticker: str, budget: float | None = None) -> dict[str
     """Auto-find the best directional option to BUY. Reads technicals
     (RSI, EMA stack, MACD) to determine bullish/bearish bias, then scans
     21-60 DTE for optimal contract. Returns top 3 with direction rationale."""
-    return await _find_best_to_buy(ticker=ticker, budget=budget)
+    res = await _find_best_to_buy(ticker=ticker, budget=budget)
+    return res.dict()
 
 
 @mcp.tool()
@@ -306,9 +310,8 @@ async def sweep_setups(
     """Opportunity Board: scan multiple tickers for best options trades.
     If no tickers given, auto-discovers from the most-active screener.
     Runs sell + buy scanners on each in parallel. Returns ranked board."""
-    return await _sweep_setups(tickers=tickers, budget=budget, max_tickers=max_tickers)
-
-
+    res = await _sweep_setups(tickers=tickers, budget=budget, max_tickers=max_tickers)
+    return res.dict()
 # ═══════════════════════════════════════════════════════════════════════════════
 # FUNDAMENTALS
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -465,67 +468,75 @@ async def walk_forward_test(
 async def get_market_pulse() -> dict[str, Any]:
     """AI-generated market sentiment with options flow score (-7 to +7).
     +5 to +7 = extremely bullish. -5 to -7 = panic-level bearish."""
-    return await _get_market_pulse()
+    res = await _get_market_pulse()
+    return res.dict()
 
 
 @mcp.tool()
 async def get_market_stats() -> dict[str, Any]:
     """Market-wide put/call ratios and sentiment indicators."""
-    return await _get_market_stats()
+    res = await _get_market_stats()
+    return res.dict()
 
 
 @mcp.tool()
 async def get_put_call_ratios(ticker: str = "SPY") -> dict[str, Any]:
     """Put/call ratios for SPY, QQQ, IWM (or any ticker).
     Below 0.7 = complacent. Above 1.0 = elevated fear (contrarian bullish)."""
-    return await _get_put_call_ratios(ticker=ticker)
+    res = await _get_put_call_ratios(ticker=ticker)
+    return res.dict()
 
 
 @mcp.tool()
 async def get_sector_flow() -> dict[str, Any]:
     """Sector-by-sector options flow with bullish/bearish sentiment.
     Compare flows: all red = real selling, mixed = rotation."""
-    return await _get_sector_flow()
+    res = await _get_sector_flow()
+    return res.dict()
 
 
 @mcp.tool()
 async def get_unusual_activity() -> dict[str, Any]:
     """Unusual options flow feed — institutional trades, premium, conviction.
     High conviction = $500K+ premium, unusual volume vs OI."""
-    return await _get_unusual_activity()
+    res = await _get_unusual_activity()
+    return res.dict()
 
 
 @mcp.tool()
 async def get_signals() -> dict[str, Any]:
     """Breakout and continuation signals with technical indicator data."""
-    return await _get_signals()
+    res = await _get_signals()
+    return res.dict()
 
 
 @mcp.tool()
 async def get_gex_overview() -> dict[str, Any]:
     """Gamma Exposure (GEX) for SPY/QQQ/IWM. Positive = pinning/calm.
     Negative = trending/volatile. GEX flip level = regime boundary."""
-    return await _get_gex_overview()
+    res = await _get_gex_overview()
+    return res.dict()
 
 
 @mcp.tool()
 async def get_earnings_calendar() -> dict[str, Any]:
     """Weekly earnings calendar — who reports this week."""
-    return await _get_earnings_calendar()
+    res = await _get_earnings_calendar()
+    return res.dict()
 
 
 @mcp.tool()
 async def get_earnings_flow() -> dict[str, Any]:
     """Pre-earnings options flow — institutional positioning ahead of earnings."""
-    return await _get_earnings_flow()
+    res = await _get_earnings_flow()
+    return res.dict()
 
 
 @mcp.tool()
 async def get_politician_trades() -> dict[str, Any]:
     """Congressional stock trading disclosures."""
-    return await _get_politician_trades()
-
-
+    res = await _get_politician_trades()
+    return res.dict()
 # ═══════════════════════════════════════════════════════════════════════════════
 # ALPHA STREAM (Proactive Signal Detection)
 # ═══════════════════════════════════════════════════════════════════════════════
