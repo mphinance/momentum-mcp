@@ -23,7 +23,10 @@
 > standalone version: point any MCP host at it, no broker anywhere near it. It's also part of the
 > [mphinance AI trading stack](https://github.com/mphinance/alpha-skills) — if you want packaged
 > Claude/Gemini Skills (screeners, regime detection, backtesting playbooks) that can call these
-> tools instead of a paid API, see [alpha-skills](https://github.com/mphinance/alpha-skills).
+> tools instead of a paid API, see [alpha-skills](https://github.com/mphinance/alpha-skills); if
+> you want to act on what these tools tell you, see
+> [awesome-broker-mcp](https://github.com/mphinance/awesome-broker-mcp) for which broker an AI
+> can actually trade through.
 
 ## Changelog
 
