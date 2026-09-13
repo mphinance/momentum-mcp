@@ -8,6 +8,13 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/mphinance/momentum-mcp/stargazers"><img src="https://img.shields.io/github/stars/mphinance/momentum-mcp?style=for-the-badge&color=00e5ff" alt="Stars"></a>
+  <a href="#tools"><img src="https://img.shields.io/badge/MCP_Tools-73-ff007f?style=for-the-badge" alt="73 Tools"></a>
+  <a href="#connect-your-client"><img src="https://img.shields.io/badge/Works_With-Claude_%7C_Cursor_%7C_Windsurf-8a2be2?style=for-the-badge" alt="Works with Claude, Cursor, Windsurf"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache--2.0-39ff14?style=for-the-badge" alt="Apache-2.0 License"></a>
+</p>
+
+<p align="center">
   <a href="#tools">Tools</a> •
   <a href="#quickstart">Quickstart</a> •
   <a href="#connect-your-client">Connect Your Client</a> •
