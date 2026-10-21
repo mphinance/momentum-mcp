@@ -51,6 +51,10 @@
   covers the analytics math, the presets, the OTC guard, the market-study reducers and the
   tool registration.
 - `tradingview-screener` was already a dependency, so nothing new to install.
+- **Fixed a fresh install that did not start.** `server.py` imported `mcp.server.fastmcp.FastMCP`,
+  the mcp 1.x SDK's copy of FastMCP, while `requirements.txt` asks for `fastmcp>=3.0`, which now
+  pulls mcp 2.x where that module is gone. The server is on the standalone `fastmcp` package it
+  declares; `MCP_TRANSPORT`, `MCP_HOST`, `MCP_PORT` and `MCP_SSE_PATH` behave as before.
 
 **September 13, 2026 — SEC EDGAR + TickerTrace, and a Docs Catch-Up**
 - **21 new tools, both credential-free:** `get_sec_filings`, `get_sec_financials`,

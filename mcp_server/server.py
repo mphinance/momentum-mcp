@@ -5,7 +5,11 @@ Registers ALL quantitative trading tools with FastMCP and exposes them
 for AI agent consumption via the Model Context Protocol (SSE transport).
 
 Can be used standalone (`python -m mcp_server.server`) or mounted on
-the FastAPI brain via `app.mount("/mcp", mcp.sse_app())`.
+the FastAPI brain via `app.mount("/mcp", mcp.http_app(transport="sse"))`.
+
+Built on the standalone `fastmcp` package (what requirements.txt installs).
+The previous `mcp.server.fastmcp.FastMCP` import was the mcp 1.x SDK's copy
+of the same class; mcp 2.x removed it, so a fresh install stopped starting.
 """
 
 from __future__ import annotations
@@ -13,7 +17,7 @@ from __future__ import annotations
 import logging
 from typing import Any
 
-from mcp.server.fastmcp import FastMCP
+from fastmcp import FastMCP
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -943,17 +947,19 @@ if __name__ == "__main__":
         "Starting momentum MCP server on %s:%s%s (transport=%s, 101 tools registered)...",
         host, port, sse_path, transport,
     )
-    if transport == "sse":
-        import asyncio
-        # Configure via FastMCP settings
-        mcp.settings.host = host
-        mcp.settings.port = port
-        mcp.settings.sse_path = sse_path
-        # Allow the public reverse-proxy host so Apache forwarding doesn't get 421
-        mcp.settings.transport_security.allowed_hosts.extend([
-            "ghost.mphinance.com",
-            "ghost.mphinance.com:443",
-        ])
-        asyncio.run(mcp.run_sse_async())
+    if transport in {"sse", "http", "streamable-http"}:
+        mcp.run(
+            transport=transport,
+            host=host,
+            port=port,
+            path=sse_path,
+            # Allow the public reverse-proxy host so Apache forwarding doesn't get 421.
+            # These are added to fastmcp's localhost defaults, not substituted for them.
+            allowed_hosts=["ghost.mphinance.com", "ghost.mphinance.com:443"],
+            # Strict: every request's Host must be loopback or allowed, which is
+            # what the old SDK guard did. fastmcp's "auto" mode waves through an
+            # unknown Host on a plain GET, and this sits behind a public proxy.
+            host_origin_protection=True,
+        )
     else:
-        mcp.run()
+        mcp.run(transport="stdio")
