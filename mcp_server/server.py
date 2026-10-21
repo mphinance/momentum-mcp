@@ -68,6 +68,7 @@ from mcp_server.edgar_tools import (
     get_stakes_held as _get_stakes_held,
 )
 from mcp_server.tickertrace_tools import register_tickertrace_tools
+from mcp_server.scanline import register_scanline_tools
 from mcp_server.position_sizer import calculate_position_size as _calculate_position_size
 from mcp_server.vcp_screener import screen_vcp as _screen_vcp
 from mcp_server.market_top import detect_market_top as _detect_market_top
@@ -101,8 +102,11 @@ mcp = FastMCP(
     "momentum",
     instructions=(
         "Welcome to the Momentum MCP Server — powered by TraderDaddy Pro.\n\n"
-        "This server provides 73 quantitative trading tools for AI agents:\n"
+        "This server provides 101 quantitative trading tools for AI agents:\n"
         "• Stock screening (22 presets + custom filters)\n"
+        "• SCANLINE TradingView screener (scan_* tools): 6 markets, 1000+ fields, "
+        "cross-field filters, computed columns, factor scoring, 47 presets, "
+        "multi-timeframe symbol reads and a dozen market studies\n"
         "• Technical analysis (24 indicators: EMA stack, RSI, MACD, ADX, ATR, Bollinger, etc.)\n"
         "• Options analysis via VoPR™ engine (vol surface, Black-Scholes, A-F grading)\n"
         "• Auto-find best options to sell/buy/straddle\n"
@@ -111,7 +115,7 @@ mcp = FastMCP(
         "• 139-book trading knowledge base (RAG search)\n"
         "• SEC EDGAR primary-source filings, XBRL financials, AS-FILER 13D/13G stakes\n"
         "• Daily institutional ETF holdings intelligence across 71 funds (etf_* tools)\n\n"
-        "Data sources: yfinance, TradingView, TraderDaddy Pro REST API, SEC EDGAR, "
+        "Data sources: yfinance, TradingView (scanner and scan_* engine), TraderDaddy Pro REST API, SEC EDGAR, "
         "TickerTrace, ChromaDB.\n"
         "Rate limited to 30 requests/minute per IP. Results are cached with "
         "market-hours-aware TTL (shorter during market open for freshness).\n\n"
@@ -131,6 +135,7 @@ _WELCOME_TEXT = """# 🐂 Momentum × TraderDaddy Pro
 | Category | Tools | Examples |
 |:---|:---|:---|
 | **Screening** | `run_stock_screen`, `run_custom_screen` | "Find oversold large-caps", "Gap-up stocks today" |
+| **TradingView Screener (scanline)** | `scan_screen`, `scan_run_preset`, `scan_analyze`, `scan_market_breadth` | 1000+ fields, cross-field filters, factor ranks, multi-timeframe reads |
 | **Technicals** | `analyze_technicals`, `get_tv_analysis` | 24 indicators + TradingView 26-indicator consensus |
 | **Options** | `analyze_options_setup`, `find_best_to_sell`, `find_best_to_buy` | VoPR™ grading, auto-scanner, budget-aware |
 | **Flow Data** | `get_unusual_activity`, `get_ticker_flow`, `get_flow_summary` | Institutional trades, conviction scoring |
@@ -919,6 +924,10 @@ async def get_stakes_held(ticker: str, months: int = 24) -> dict[str, Any]:
 
 register_tickertrace_tools(mcp)
 
+# SCANLINE: the TradingView screen engine from mphinance/scanline, 28 tools,
+# 4 prompts and 3 resources, all `scan_`-prefixed. See docs/SCANLINE.md.
+register_scanline_tools(mcp)
+
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # Entry point (standalone mode)
@@ -931,7 +940,7 @@ if __name__ == "__main__":
     port = int(os.getenv("MCP_PORT", "8401"))
     sse_path = os.getenv("MCP_SSE_PATH", "/mcp/sse")
     logger.info(
-        "Starting momentum MCP server on %s:%s%s (transport=%s, 73 tools registered)...",
+        "Starting momentum MCP server on %s:%s%s (transport=%s, 101 tools registered)...",
         host, port, sse_path, transport,
     )
     if transport == "sse":

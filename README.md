@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="https://github.com/mphinance/momentum-mcp/stargazers"><img src="https://img.shields.io/github/stars/mphinance/momentum-mcp?style=for-the-badge&color=00e5ff" alt="Stars"></a>
-  <a href="#tools"><img src="https://img.shields.io/badge/MCP_Tools-73-ff007f?style=for-the-badge" alt="73 Tools"></a>
+  <a href="#tools"><img src="https://img.shields.io/badge/MCP_Tools-101-ff007f?style=for-the-badge" alt="101 Tools"></a>
   <a href="#connect-your-client"><img src="https://img.shields.io/badge/Works_With-Claude_%7C_Cursor_%7C_Windsurf-8a2be2?style=for-the-badge" alt="Works with Claude, Cursor, Windsurf"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache--2.0-39ff14?style=for-the-badge" alt="Apache-2.0 License"></a>
 </p>
@@ -37,6 +37,21 @@
 
 ## Changelog
 
+**October 21, 2026 — SCANLINE Merged In**
+- **28 new tools, 4 prompts, 3 resources, all `scan_`-prefixed and credential-free:** the
+  full TradingView screen engine from [mphinance/scanline](https://github.com/mphinance/scanline)
+  now lives in `mcp_server/scanline/`. Six markets (stocks, crypto, forex, futures, bonds,
+  CFDs), the 1000+ field universe with `scan_search_fields` to discover it, cross-field
+  filters (`SMA50 crosses_above SMA200`), sandboxed computed columns, cross-sectional stats,
+  factor scoring, 47 preset scans, a multi-timeframe `scan_analyze`, and a dozen market studies
+  (breadth, sector rotation, gap scanner, earnings radar, dividend quality). OTC shells are
+  excluded by default on `america`; pass `include_otc=True` to lift it. See
+  [docs/SCANLINE.md](docs/SCANLINE.md).
+- First test suite in the repo: `python -m pytest tests/ -q -m "not live"` runs offline and
+  covers the analytics math, the presets, the OTC guard, the market-study reducers and the
+  tool registration.
+- `tradingview-screener` was already a dependency, so nothing new to install.
+
 **September 13, 2026 — SEC EDGAR + TickerTrace, and a Docs Catch-Up**
 - **21 new tools, both credential-free:** `get_sec_filings`, `get_sec_financials`,
   `get_shares_outstanding`, `get_stakes_held` (SEC EDGAR — no API key, just a `SEC_USER_AGENT`
@@ -57,9 +72,10 @@
 
 ## What Is This?
 
-**momentum-mcp** turns any MCP-compatible AI assistant into a quantitative trading analyst. Instead of copy-pasting tickers into Yahoo Finance and screenshotting charts, your AI agent has access to 73 institutional-grade tools to:
+**momentum-mcp** turns any MCP-compatible AI assistant into a quantitative trading analyst. Instead of copy-pasting tickers into Yahoo Finance and screenshotting charts, your AI agent has access to 101 institutional-grade tools to:
 
 - 🔍 **Screen the entire market** in seconds — find overbought stocks, unusual volume spikes, new 52-week highs
+- 🧮 **Run the SCANLINE engine** — 1000+ TradingView fields across 6 markets, cross-field filters, computed columns, factor ranks, and market studies like breadth, sector rotation and gap fill tracking
 - 📊 **Pull clean OHLCV data** for any ticker, any timeframe — ready for analysis, no CSV wrangling
 - 📈 **Compute technical indicators** — RSI, MACD with plain-English interpretation, not just raw numbers
 - 🕯️ **Generate professional candlestick charts** — dark-themed with stacked EMA overlays (8/21/34/55/89), volume panels, publication-ready PNGs
@@ -76,11 +92,12 @@ All of this happens through the [Model Context Protocol](https://modelcontextpro
 
 ## Tools
 
-73 tools across twelve groups:
+101 tools across thirteen groups:
 
 | Group | Tools |
 |---|---|
 | **Screening & Data** | `run_stock_screen`, `run_custom_screen`, `get_historical_data`, `get_fundamentals` |
+| **SCANLINE TradingView Screener** (no API key, see [docs/SCANLINE.md](docs/SCANLINE.md)) | `scan_screen`, `scan_run_preset`, `scan_run_factor_preset`, `scan_lookup_symbol`, `scan_search_symbols`, `scan_compare`, `scan_analyze`, `scan_technical_rating`, `scan_fundamentals`, `scan_chart`, `scan_sector_breakdown`, `scan_top_movers`, `scan_volume_leaders`, `scan_new_highs_lows`, `scan_market_breadth`, `scan_sector_rotation`, `scan_momentum_consistency`, `scan_relative_strength_leaders`, `scan_ema_stack_scan`, `scan_gap_scanner`, `scan_earnings_radar`, `scan_dividend_screen`, `scan_list_markets`, `scan_search_fields`, `scan_list_operators`, `scan_list_presets`, `scan_list_factor_presets`, `scan_server_stats` |
 | **Technicals & Charts** | `analyze_technicals` (24 indicators), `get_tv_analysis` (26-indicator TradingView consensus), `generate_chart` |
 | **Options — VoPR™ Engine** | `analyze_options_setup`, `find_best_to_sell`, `find_best_to_buy`, `sweep_setups`, `calculate_position_size` |
 | **Institutional Flow & Gamma** | `get_market_pulse`, `get_market_stats`, `get_put_call_ratios`, `get_sector_flow`, `get_unusual_activity`, `get_signals`, `get_gex_overview`, `get_earnings_calendar`, `get_earnings_flow`, `get_politician_trades`, `get_alpha_signals` |
@@ -103,6 +120,9 @@ export SEC_USER_AGENT="Your Project Name (contact: you@example.com)"
 Without it, `get_sec_filings` and friends return a clean `{"error": ...}` naming the missing
 variable rather than crashing. The 17 `etf_*` tools need nothing at all —
 [api.tickertrace.pro](https://api.tickertrace.pro) is deliberately open, no key or account.
+The 28 `scan_*` tools need nothing either: TradingView serves delayed data to anyone. A
+TradingView `sessionid` cookie in `SCANLINE_TV_SESSIONID` upgrades them to whatever real-time
+feeds that account has; the cookie never appears in a response, a log line or a cache key.
 
 ## Quickstart
 
@@ -154,7 +174,7 @@ The most popular MCP client. Add to your `claude_desktop_config.json` (located a
 }
 ```
 
-Restart Claude Desktop. You'll see the 🔨 tools icon — click it to verify all 73 tools are loaded.
+Restart Claude Desktop. You'll see the 🔨 tools icon — click it to verify all 101 tools are loaded.
 
 ---
 
@@ -275,7 +295,7 @@ momentum-mcp/
 ├── README.md
 └── mcp_server/
     ├── __init__.py
-    ├── server.py            # FastMCP entry point — registers all 73 tools
+    ├── server.py            # FastMCP entry point — registers all 101 tools
     ├── screener.py          # TradingView stock scanner
     ├── data.py              # yfinance OHLCV with async wrapper
     ├── technicals.py        # pandas-ta indicator suite
@@ -285,6 +305,8 @@ momentum-mcp/
     ├── edgar_tools.py        # get_sec_filings/financials/shares_outstanding/stakes_held
     ├── tickertrace.py       # api.tickertrace.pro client — no key, no account
     ├── tickertrace_tools.py # 17 etf_* institutional ETF holdings tools
+    ├── scanline/            # the SCANLINE engine: pipeline, analytics, fields, presets
+    │   └── tools.py         # 28 scan_* tools, 4 prompts, 3 resources
     └── ...                  # options, backtest, screeners, macro/regime, knowledge base
 ```
 
@@ -315,6 +337,10 @@ Once connected, try asking your AI assistant:
 > "What's the latest news on TSLA? Pull the full text of the most interesting article."
 
 > "Find oversold stocks, then analyze the technicals on the top 3 results"
+
+> "Screen US mega caps with RSI under 35, add a dollar-volume column, rank them by the Value factor, then scan_analyze the top 3"
+
+> "Which sectors are rotating in right now, and what gapped up this morning that is still holding the gap?"
 
 ## License
 

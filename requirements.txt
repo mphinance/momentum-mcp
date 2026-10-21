@@ -4,7 +4,7 @@
 # MCP server framework
 fastmcp>=3.0
 
-# Stock screening
+# Stock screening, and the SCANLINE engine in mcp_server/scanline/ (scan_* tools)
 tradingview-screener>=3.0
 
 # Market data
@@ -37,7 +37,11 @@ tradingview-ta>=3.3
 chromadb>=1.0
 
 # Required by mcp_server/edgar.py (SEC EDGAR — no API key, just a User-Agent string)
+# and by mcp_server/scanline/screener.py (TradingView scanner, optional session cookie)
 requests>=2.31
 
 # Required by mcp_server/tickertrace.py (api.tickertrace.pro — no key, no account)
 httpx>=0.27
+
+# Test suite: python -m pytest tests/ -q -m "not live"
+pytest>=8.0

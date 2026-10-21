@@ -1,0 +1,7296 @@
+[
+{
+"id": "asset_class",
+"label": "Asset Class",
+"group": "Balance Sheet",
+"type": "str",
+"unit": ""
+},
+{
+"id": "asset_turnover_current",
+"label": "Asset Turnover Current",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "asset_turnover_fy",
+"label": "Asset Turnover Fy",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "book_tangible_per_share_current",
+"label": "Book Tangible Per Share Current",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "book_tangible_per_share_fh",
+"label": "Book Tangible Per Share Fh",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "book_tangible_per_share_fq",
+"label": "Book Tangible Per Share Fq",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "book_tangible_per_share_fy",
+"label": "Book Tangible Per Share Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "book_value_per_share_current",
+"label": "Book Value Per Share Current",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "book_value_per_share_fh",
+"label": "Book Value Per Share Fh",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "book_value_per_share_fq",
+"label": "Book Value Per Share Fq",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "book_value_per_share_fy",
+"label": "Book Value Per Share Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "cash_f_financing_activities_fh",
+"label": "Cash F Financing Activities Fh",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "cash_f_financing_activities_fq",
+"label": "Cash F Financing Activities Fq",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "cash_f_financing_activities_fy",
+"label": "Cash F Financing Activities Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "cash_f_financing_activities_ttm",
+"label": "Cash F Financing Activities Ttm",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "cash_f_investing_activities_fh",
+"label": "Cash F Investing Activities Fh",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "cash_f_investing_activities_fq",
+"label": "Cash F Investing Activities Fq",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "cash_f_investing_activities_fy",
+"label": "Cash F Investing Activities Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "cash_f_investing_activities_ttm",
+"label": "Cash F Investing Activities Ttm",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "cash_n_equivalents_fq",
+"label": "Cash N Equivalents Fq",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "cash_n_equivalents_fy",
+"label": "Cash N Equivalents Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "cash_n_short_term_invest_fq",
+"label": "Cash N Short Term Invest Fq",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "cash_n_short_term_invest_fy",
+"label": "Cash N Short Term Invest Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "cash_n_short_term_invest_to_total_current_liabilities_fq",
+"label": "Cash N Short Term Invest To Total Current Liabilities Fq",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "cash_n_short_term_invest_to_total_current_liabilities_fy",
+"label": "Cash N Short Term Invest To Total Current Liabilities Fy",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "cash_n_short_term_invest_to_total_debt_fq",
+"label": "Cash N Short Term Invest To Total Debt Fq",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "cash_n_short_term_invest_to_total_debt_fy",
+"label": "Cash N Short Term Invest To Total Debt Fy",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "cash_per_share_current",
+"label": "Cash Per Share Current",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "cash_per_share_fh",
+"label": "Cash Per Share Fh",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "cash_per_share_fq",
+"label": "Cash Per Share Fq",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "cash_per_share_fy",
+"label": "Cash Per Share Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "cash_ratio",
+"label": "Cash Ratio",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "cryptoasset-info.description",
+"label": "Cryptoasset-info Description",
+"group": "Balance Sheet",
+"type": "str",
+"unit": ""
+},
+{
+"id": "cryptoasset-info.id",
+"label": "Cryptoasset-info Id",
+"group": "Balance Sheet",
+"type": "str",
+"unit": ""
+},
+{
+"id": "current_ratio",
+"label": "Current Ratio",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "current_ratio_current",
+"label": "Current Ratio Current",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "current_ratio_fq",
+"label": "Current Ratio Fq",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "current_ratio_fy",
+"label": "Current Ratio Fy",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "debt_to_asset_fq",
+"label": "Debt To Asset Fq",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "debt_to_asset_fy",
+"label": "Debt To Asset Fy",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "debt_to_assets",
+"label": "Debt To Assets",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "debt_to_equity",
+"label": "Debt To Equity",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "debt_to_equity_fq",
+"label": "Debt To Equity Fq",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "debt_to_equity_fy",
+"label": "Debt To Equity Fy",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "effective_interest_rate_on_debt_fy",
+"label": "Effective Interest Rate On Debt Fy",
+"group": "Balance Sheet",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "effective_interest_rate_on_debt_ttm",
+"label": "Effective Interest Rate On Debt Ttm",
+"group": "Balance Sheet",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "fixed_assets_turnover_fq",
+"label": "Fixed Assets Turnover Fq",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "fixed_assets_turnover_fy",
+"label": "Fixed Assets Turnover Fy",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "free_cash_flow",
+"label": "Free Cash Flow",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "free_cash_flow_cagr_5y",
+"label": "Free Cash Flow Cagr 5y",
+"group": "Balance Sheet",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "free_cash_flow_fh",
+"label": "Free Cash Flow Fh",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "free_cash_flow_fq",
+"label": "Free Cash Flow Fq",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "free_cash_flow_fq_h",
+"label": "Free Cash Flow Fq H",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "free_cash_flow_fy",
+"label": "Free Cash Flow Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "free_cash_flow_fy_h",
+"label": "Free Cash Flow Fy H",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "free_cash_flow_per_employee_fy",
+"label": "Free Cash Flow Per Employee Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "free_cash_flow_per_share_current",
+"label": "Free Cash Flow Per Share Current",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "free_cash_flow_per_share_fh",
+"label": "Free Cash Flow Per Share Fh",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "free_cash_flow_per_share_fq",
+"label": "Free Cash Flow Per Share Fq",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "free_cash_flow_per_share_fy",
+"label": "Free Cash Flow Per Share Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "free_cash_flow_per_share_ttm",
+"label": "Free Cash Flow Per Share Ttm",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "free_cash_flow_qoq_growth_fq",
+"label": "Free Cash Flow Qoq Growth Fq",
+"group": "Balance Sheet",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "free_cash_flow_ttm",
+"label": "Free Cash Flow Ttm",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "free_cash_flow_ttm_h",
+"label": "Free Cash Flow Ttm H",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "free_cash_flow_yoy_growth_fq",
+"label": "Free Cash Flow Yoy Growth Fq",
+"group": "Balance Sheet",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "free_cash_flow_yoy_growth_fy",
+"label": "Free Cash Flow Yoy Growth Fy",
+"group": "Balance Sheet",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "free_cash_flow_yoy_growth_ttm",
+"label": "Free Cash Flow Yoy Growth Ttm",
+"group": "Balance Sheet",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "long_term_debt_fq",
+"label": "Long Term Debt Fq",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "long_term_debt_fy",
+"label": "Long Term Debt Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "long_term_debt_to_assets_fq",
+"label": "Long Term Debt To Assets Fq",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "long_term_debt_to_assets_fy",
+"label": "Long Term Debt To Assets Fy",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "long_term_debt_to_equity_fq",
+"label": "Long Term Debt To Equity Fq",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "net_debt",
+"label": "Net Debt",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "net_debt_fq",
+"label": "Net Debt Fq",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "net_debt_fy",
+"label": "Net Debt Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "price_annual_book",
+"label": "Price Annual Book",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "price_cash_flow_current",
+"label": "Price Cash Flow Current",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "price_to_cash_ratio",
+"label": "Price To Cash Ratio",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "quick_ratio",
+"label": "Quick Ratio",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "quick_ratio_current",
+"label": "Quick Ratio Current",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "quick_ratio_fq",
+"label": "Quick Ratio Fq",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "quick_ratio_fy",
+"label": "Quick Ratio Fy",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "short_term_debt_fq",
+"label": "Short Term Debt Fq",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "short_term_debt_fy",
+"label": "Short Term Debt Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "shrhldrs_equity_fq",
+"label": "Shrhldrs Equity Fq",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "shrhldrs_equity_fy",
+"label": "Shrhldrs Equity Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "shrhldrs_equity_to_total_assets_fq",
+"label": "Shrhldrs Equity To Total Assets Fq",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "shrhldrs_equity_to_total_assets_fy",
+"label": "Shrhldrs Equity To Total Assets Fy",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "total_assets",
+"label": "Total Assets",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_assets_fq",
+"label": "Total Assets Fq",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_assets_fq_h",
+"label": "Total Assets Fq H",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "total_assets_fy",
+"label": "Total Assets Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_assets_fy_h",
+"label": "Total Assets Fy H",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "total_assets_per_employee_fy",
+"label": "Total Assets Per Employee Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_assets_qoq_growth_fq",
+"label": "Total Assets Qoq Growth Fq",
+"group": "Balance Sheet",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "total_assets_to_equity_fq",
+"label": "Total Assets To Equity Fq",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "total_assets_to_equity_fy",
+"label": "Total Assets To Equity Fy",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "total_assets_yoy_growth_fq",
+"label": "Total Assets Yoy Growth Fq",
+"group": "Balance Sheet",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "total_assets_yoy_growth_fy",
+"label": "Total Assets Yoy Growth Fy",
+"group": "Balance Sheet",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "total_current_assets",
+"label": "Total Current Assets",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_current_assets_fq",
+"label": "Total Current Assets Fq",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_current_assets_fy",
+"label": "Total Current Assets Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_current_liabilities_fq",
+"label": "Total Current Liabilities Fq",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_current_liabilities_fy",
+"label": "Total Current Liabilities Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_debt",
+"label": "Total Debt",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_debt_fq",
+"label": "Total Debt Fq",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_debt_fq_h",
+"label": "Total Debt Fq H",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "total_debt_fy",
+"label": "Total Debt Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_debt_fy_h",
+"label": "Total Debt Fy H",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "total_debt_per_employee_fy",
+"label": "Total Debt Per Employee Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_debt_per_share_current",
+"label": "Total Debt Per Share Current",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_debt_per_share_fh",
+"label": "Total Debt Per Share Fh",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_debt_per_share_fq",
+"label": "Total Debt Per Share Fq",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_debt_per_share_fy",
+"label": "Total Debt Per Share Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_debt_qoq_growth_fq",
+"label": "Total Debt Qoq Growth Fq",
+"group": "Balance Sheet",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "total_debt_to_capital_fq",
+"label": "Total Debt To Capital Fq",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "total_debt_to_capital_fy",
+"label": "Total Debt To Capital Fy",
+"group": "Balance Sheet",
+"type": "num",
+"unit": ""
+},
+{
+"id": "total_debt_yoy_growth_fq",
+"label": "Total Debt Yoy Growth Fq",
+"group": "Balance Sheet",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "total_debt_yoy_growth_fy",
+"label": "Total Debt Yoy Growth Fy",
+"group": "Balance Sheet",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "total_equity_fq",
+"label": "Total Equity Fq",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_equity_fy",
+"label": "Total Equity Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_liabilities_fq",
+"label": "Total Liabilities Fq",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_liabilities_fy",
+"label": "Total Liabilities Fy",
+"group": "Balance Sheet",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "cash_dividend_coverage_ratio_fy",
+"label": "Cash Dividend Coverage Ratio Fy",
+"group": "Dividends",
+"type": "num",
+"unit": ""
+},
+{
+"id": "cash_dividend_coverage_ratio_ttm",
+"label": "Cash Dividend Coverage Ratio Ttm",
+"group": "Dividends",
+"type": "num",
+"unit": ""
+},
+{
+"id": "continuous_dividend_growth",
+"label": "Continuous Dividend Growth",
+"group": "Dividends",
+"type": "num",
+"unit": ""
+},
+{
+"id": "continuous_dividend_payout",
+"label": "Continuous Dividend Payout",
+"group": "Dividends",
+"type": "num",
+"unit": ""
+},
+{
+"id": "dividend_amount_recent",
+"label": "Dividend Amount Recent",
+"group": "Dividends",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "dividend_amount_upcoming",
+"label": "Dividend Amount Upcoming",
+"group": "Dividends",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "dividend_ex_date_recent",
+"label": "Dividend Ex Date Recent",
+"group": "Dividends",
+"type": "str",
+"unit": ""
+},
+{
+"id": "dividend_ex_date_upcoming",
+"label": "Dividend Ex Date Upcoming",
+"group": "Dividends",
+"type": "str",
+"unit": ""
+},
+{
+"id": "dividend_frequency_recent",
+"label": "Dividend Frequency Recent",
+"group": "Dividends",
+"type": "str",
+"unit": ""
+},
+{
+"id": "dividend_frequency_upcoming",
+"label": "Dividend Frequency Upcoming",
+"group": "Dividends",
+"type": "str",
+"unit": ""
+},
+{
+"id": "dividend_payment_date_recent",
+"label": "Dividend Payment Date Recent",
+"group": "Dividends",
+"type": "str",
+"unit": ""
+},
+{
+"id": "dividend_payment_date_upcoming",
+"label": "Dividend Payment Date Upcoming",
+"group": "Dividends",
+"type": "str",
+"unit": ""
+},
+{
+"id": "dividend_payout_ratio_fy",
+"label": "Dividend Payout Ratio Fy",
+"group": "Dividends",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "dividend_payout_ratio_percent_fq",
+"label": "Dividend Payout Ratio Percent Fq",
+"group": "Dividends",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "dividend_payout_ratio_percent_fy",
+"label": "Dividend Payout Ratio Percent Fy",
+"group": "Dividends",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "dividend_payout_ratio_ttm",
+"label": "Dividend Payout Ratio Ttm",
+"group": "Dividends",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "dividend_treatment",
+"label": "Dividend Treatment",
+"group": "Dividends",
+"type": "str",
+"unit": ""
+},
+{
+"id": "dividend_yield_recent",
+"label": "Dividend Yield Recent",
+"group": "Dividends",
+"type": "num",
+"unit": ""
+},
+{
+"id": "dividend_yield_upcoming",
+"label": "Dividend Yield Upcoming",
+"group": "Dividends",
+"type": "num",
+"unit": ""
+},
+{
+"id": "dividends_frequency",
+"label": "Dividends Frequency",
+"group": "Dividends",
+"type": "str",
+"unit": ""
+},
+{
+"id": "dividends_paid",
+"label": "Dividends Paid",
+"group": "Dividends",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "dividends_per_share_fq",
+"label": "Dividends Per Share Fq",
+"group": "Dividends",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "dividends_yield",
+"label": "Dividends Yield",
+"group": "Dividends",
+"type": "num",
+"unit": ""
+},
+{
+"id": "dividends_yield_current",
+"label": "Dividends Yield Current",
+"group": "Dividends",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "dividends_yield_fq",
+"label": "Dividends Yield Fq",
+"group": "Dividends",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "dividends_yield_fy",
+"label": "Dividends Yield Fy",
+"group": "Dividends",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "dps_common_stock_prim_issue_fh",
+"label": "Dps Common Stock Prim Issue Fh",
+"group": "Dividends",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "dps_common_stock_prim_issue_fq",
+"label": "Dps Common Stock Prim Issue Fq",
+"group": "Dividends",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "dps_common_stock_prim_issue_fy",
+"label": "Dps Common Stock Prim Issue Fy",
+"group": "Dividends",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "dps_common_stock_prim_issue_fy_h",
+"label": "Dps Common Stock Prim Issue Fy H",
+"group": "Dividends",
+"type": "num",
+"unit": ""
+},
+{
+"id": "dps_common_stock_prim_issue_ttm",
+"label": "Dps Common Stock Prim Issue Ttm",
+"group": "Dividends",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "dps_common_stock_prim_issue_yoy_growth_fy",
+"label": "Dps Common Stock Prim Issue Yoy Growth Fy",
+"group": "Dividends",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "ex_dividend_date_recent",
+"label": "Ex Dividend Date Recent",
+"group": "Dividends",
+"type": "str",
+"unit": ""
+},
+{
+"id": "ex_dividend_date_upcoming",
+"label": "Ex Dividend Date Upcoming",
+"group": "Dividends",
+"type": "str",
+"unit": ""
+},
+{
+"id": "expected_annual_dividends",
+"label": "Expected Annual Dividends",
+"group": "Dividends",
+"type": "num",
+"unit": ""
+},
+{
+"id": "indicated_annual_dividend",
+"label": "Indicated Annual Dividend",
+"group": "Dividends",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "neg_total_cash_dividends_paid_fh",
+"label": "Neg Total Cash Dividends Paid Fh",
+"group": "Dividends",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "neg_total_cash_dividends_paid_fq",
+"label": "Neg Total Cash Dividends Paid Fq",
+"group": "Dividends",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "neg_total_cash_dividends_paid_fy",
+"label": "Neg Total Cash Dividends Paid Fy",
+"group": "Dividends",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "neg_total_cash_dividends_paid_ttm",
+"label": "Neg Total Cash Dividends Paid Ttm",
+"group": "Dividends",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "next_dividend_date",
+"label": "Next Dividend Date",
+"group": "Dividends",
+"type": "str",
+"unit": ""
+},
+{
+"id": "preferred_dividends",
+"label": "Preferred Dividends",
+"group": "Dividends",
+"type": "num",
+"unit": ""
+},
+{
+"id": "rates_dividend_recent",
+"label": "Rates Dividend Recent",
+"group": "Dividends",
+"type": "str",
+"unit": ""
+},
+{
+"id": "rates_dividend_upcoming",
+"label": "Rates Dividend Upcoming",
+"group": "Dividends",
+"type": "str",
+"unit": ""
+},
+{
+"id": "total_cash_dividends_paid_fh",
+"label": "Total Cash Dividends Paid Fh",
+"group": "Dividends",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_cash_dividends_paid_fq",
+"label": "Total Cash Dividends Paid Fq",
+"group": "Dividends",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_cash_dividends_paid_fy",
+"label": "Total Cash Dividends Paid Fy",
+"group": "Dividends",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_cash_dividends_paid_ttm",
+"label": "Total Cash Dividends Paid Ttm",
+"group": "Dividends",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "base_currency_kind",
+"label": "Base Currency Kind",
+"group": "Identity",
+"type": "str",
+"unit": ""
+},
+{
+"id": "country",
+"label": "Country",
+"group": "Identity",
+"type": "str",
+"unit": ""
+},
+{
+"id": "country_code_fund",
+"label": "Country Code Fund",
+"group": "Identity",
+"type": "str",
+"unit": ""
+},
+{
+"id": "currency",
+"label": "Currency",
+"group": "Identity",
+"type": "str",
+"unit": ""
+},
+{
+"id": "currency_hedged_flag",
+"label": "Currency Hedged Flag",
+"group": "Identity",
+"type": "str",
+"unit": ""
+},
+{
+"id": "currency_id",
+"label": "Currency Id",
+"group": "Identity",
+"type": "str",
+"unit": ""
+},
+{
+"id": "currency_kind",
+"label": "Currency Kind",
+"group": "Identity",
+"type": "str",
+"unit": ""
+},
+{
+"id": "etf_fund_currency",
+"label": "Etf Fund Currency",
+"group": "Identity",
+"type": "str",
+"unit": ""
+},
+{
+"id": "fundamental_currency_code",
+"label": "Fundamental Currency Code",
+"group": "Identity",
+"type": "str",
+"unit": ""
+},
+{
+"id": "industry",
+"label": "Industry",
+"group": "Identity",
+"type": "str",
+"unit": ""
+},
+{
+"id": "sector",
+"label": "Sector",
+"group": "Identity",
+"type": "str",
+"unit": ""
+},
+{
+"id": "subtype",
+"label": "Subtype",
+"group": "Identity",
+"type": "str",
+"unit": ""
+},
+{
+"id": "type",
+"label": "Type",
+"group": "Identity",
+"type": "str",
+"unit": ""
+},
+{
+"id": "typespecs",
+"label": "Typespecs",
+"group": "Identity",
+"type": "str",
+"unit": ""
+},
+{
+"id": "basic_eps_net_income",
+"label": "Basic Eps Net Income",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "cash_f_operating_activities_fh",
+"label": "Cash F Operating Activities Fh",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "cash_f_operating_activities_fq",
+"label": "Cash F Operating Activities Fq",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "cash_f_operating_activities_fy",
+"label": "Cash F Operating Activities Fy",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "cash_f_operating_activities_ttm",
+"label": "Cash F Operating Activities Ttm",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "debt_to_revenue_fy",
+"label": "Debt To Revenue Fy",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "debt_to_revenue_ttm",
+"label": "Debt To Revenue Ttm",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "earnings_fq_h",
+"label": "Earnings Fq H",
+"group": "Income",
+"type": "str",
+"unit": ""
+},
+{
+"id": "earnings_per_share_basic_cagr_5y",
+"label": "Earnings Per Share Basic Cagr 5y",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "earnings_per_share_basic_fh",
+"label": "Earnings Per Share Basic Fh",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "earnings_per_share_basic_fq",
+"label": "Earnings Per Share Basic Fq",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "earnings_per_share_basic_fy",
+"label": "Earnings Per Share Basic Fy",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "earnings_per_share_basic_fy_h",
+"label": "Earnings Per Share Basic Fy H",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "earnings_per_share_basic_ttm",
+"label": "Earnings Per Share Basic Ttm",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "earnings_per_share_diluted_5y_growth_fy",
+"label": "Earnings Per Share Diluted 5y Growth Fy",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "earnings_per_share_diluted_fh",
+"label": "Earnings Per Share Diluted Fh",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "earnings_per_share_diluted_fq",
+"label": "Earnings Per Share Diluted Fq",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "earnings_per_share_diluted_fq_h",
+"label": "Earnings Per Share Diluted Fq H",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "earnings_per_share_diluted_fy",
+"label": "Earnings Per Share Diluted Fy",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "earnings_per_share_diluted_fy_h",
+"label": "Earnings Per Share Diluted Fy H",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "earnings_per_share_diluted_qoq_growth_fq",
+"label": "Earnings Per Share Diluted Qoq Growth Fq",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "earnings_per_share_diluted_ttm",
+"label": "Earnings Per Share Diluted Ttm",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "earnings_per_share_diluted_ttm_h",
+"label": "Earnings Per Share Diluted Ttm H",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "earnings_per_share_diluted_yoy_growth_fq",
+"label": "Earnings Per Share Diluted Yoy Growth Fq",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "earnings_per_share_diluted_yoy_growth_fy",
+"label": "Earnings Per Share Diluted Yoy Growth Fy",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "earnings_per_share_diluted_yoy_growth_ttm",
+"label": "Earnings Per Share Diluted Yoy Growth Ttm",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "earnings_per_share_fh",
+"label": "Earnings Per Share Fh",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "earnings_per_share_forecast_fq",
+"label": "Earnings Per Share Forecast Fq",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "earnings_per_share_forecast_next_fh",
+"label": "Earnings Per Share Forecast Next Fh",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "earnings_per_share_forecast_next_fq",
+"label": "Earnings Per Share Forecast Next Fq",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "earnings_per_share_forecast_next_fy",
+"label": "Earnings Per Share Forecast Next Fy",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "earnings_per_share_fq",
+"label": "Earnings Per Share Fq",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "earnings_per_share_fy",
+"label": "Earnings Per Share Fy",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "earnings_publication_type_fq",
+"label": "Earnings Publication Type Fq",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "earnings_publication_type_next_fq",
+"label": "Earnings Publication Type Next Fq",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "earnings_release_calendar_date",
+"label": "Earnings Release Calendar Date",
+"group": "Income",
+"type": "str",
+"unit": ""
+},
+{
+"id": "earnings_release_date",
+"label": "Earnings Release Date",
+"group": "Income",
+"type": "str",
+"unit": ""
+},
+{
+"id": "earnings_release_next_calendar_date",
+"label": "Earnings Release Next Calendar Date",
+"group": "Income",
+"type": "str",
+"unit": ""
+},
+{
+"id": "earnings_release_next_date",
+"label": "Earnings Release Next Date",
+"group": "Income",
+"type": "str",
+"unit": ""
+},
+{
+"id": "earnings_release_next_time",
+"label": "Earnings Release Next Time",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "earnings_release_next_trading_date_fq",
+"label": "Earnings Release Next Trading Date Fq",
+"group": "Income",
+"type": "str",
+"unit": ""
+},
+{
+"id": "earnings_release_next_trading_date_fy",
+"label": "Earnings Release Next Trading Date Fy",
+"group": "Income",
+"type": "str",
+"unit": ""
+},
+{
+"id": "earnings_release_time",
+"label": "Earnings Release Time",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "earnings_release_trading_date_fq",
+"label": "Earnings Release Trading Date Fq",
+"group": "Income",
+"type": "str",
+"unit": ""
+},
+{
+"id": "earnings_release_trading_date_fy",
+"label": "Earnings Release Trading Date Fy",
+"group": "Income",
+"type": "str",
+"unit": ""
+},
+{
+"id": "earnings_yield",
+"label": "Earnings Yield",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "ebitda",
+"label": "Ebitda",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "ebitda_fh",
+"label": "Ebitda Fh",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "ebitda_fq",
+"label": "Ebitda Fq",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "ebitda_fq_h",
+"label": "Ebitda Fq H",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ebitda_fy",
+"label": "Ebitda Fy",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "ebitda_fy_h",
+"label": "Ebitda Fy H",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ebitda_interst_cover_fy",
+"label": "Ebitda Interst Cover Fy",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ebitda_interst_cover_ttm",
+"label": "Ebitda Interst Cover Ttm",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ebitda_less_capex_interst_cover_fy",
+"label": "Ebitda Less Capex Interst Cover Fy",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ebitda_less_capex_interst_cover_ttm",
+"label": "Ebitda Less Capex Interst Cover Ttm",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ebitda_per_employee_fy",
+"label": "Ebitda Per Employee Fy",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "ebitda_per_share_current",
+"label": "Ebitda Per Share Current",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "ebitda_per_share_fh",
+"label": "Ebitda Per Share Fh",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "ebitda_per_share_fq",
+"label": "Ebitda Per Share Fq",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "ebitda_per_share_fy",
+"label": "Ebitda Per Share Fy",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "ebitda_per_share_ttm",
+"label": "Ebitda Per Share Ttm",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "ebitda_qoq_growth_fq",
+"label": "Ebitda Qoq Growth Fq",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "ebitda_ttm",
+"label": "Ebitda Ttm",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "ebitda_ttm_h",
+"label": "Ebitda Ttm H",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ebitda_yoy_growth_fq",
+"label": "Ebitda Yoy Growth Fq",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "ebitda_yoy_growth_fy",
+"label": "Ebitda Yoy Growth Fy",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "ebitda_yoy_growth_ttm",
+"label": "Ebitda Yoy Growth Ttm",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "eps_diluted_growth_percent_fq",
+"label": "Eps Diluted Growth Percent Fq",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "eps_diluted_growth_percent_fy",
+"label": "Eps Diluted Growth Percent Fy",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "eps_surprise_fq",
+"label": "Eps Surprise Fq",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "eps_surprise_percent_fq",
+"label": "Eps Surprise Percent Fq",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "income_from_cont_ops_fh",
+"label": "Income From Cont Ops Fh",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "income_from_cont_ops_fq",
+"label": "Income From Cont Ops Fq",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "income_from_cont_ops_fy",
+"label": "Income From Cont Ops Fy",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "income_from_cont_ops_ttm",
+"label": "Income From Cont Ops Ttm",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "last_annual_eps",
+"label": "Last Annual Eps",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "last_annual_revenue",
+"label": "Last Annual Revenue",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "net_debt_to_ebitda_fq",
+"label": "Net Debt To Ebitda Fq",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "net_debt_to_ebitda_fy",
+"label": "Net Debt To Ebitda Fy",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "net_income",
+"label": "Net Income",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "net_income_bef_disc_oper_fy",
+"label": "Net Income Bef Disc Oper Fy",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "net_income_cagr_5y",
+"label": "Net Income Cagr 5y",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "net_income_fh",
+"label": "Net Income Fh",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "net_income_fq",
+"label": "Net Income Fq",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "net_income_fq_h",
+"label": "Net Income Fq H",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "net_income_fy",
+"label": "Net Income Fy",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "net_income_fy_h",
+"label": "Net Income Fy H",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "net_income_per_employee_fy",
+"label": "Net Income Per Employee Fy",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "net_income_qoq_growth_fq",
+"label": "Net Income Qoq Growth Fq",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "net_income_ttm",
+"label": "Net Income Ttm",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "net_income_ttm_h",
+"label": "Net Income Ttm H",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "net_income_yoy_growth_fq",
+"label": "Net Income Yoy Growth Fq",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "net_income_yoy_growth_fy",
+"label": "Net Income Yoy Growth Fy",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "net_income_yoy_growth_ttm",
+"label": "Net Income Yoy Growth Ttm",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "net_revenue_after_provision_fh",
+"label": "Net Revenue After Provision Fh",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "net_revenue_after_provision_fq",
+"label": "Net Revenue After Provision Fq",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "net_revenue_after_provision_fy",
+"label": "Net Revenue After Provision Fy",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "net_revenue_after_provision_ttm",
+"label": "Net Revenue After Provision Ttm",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "net_revenue_fh",
+"label": "Net Revenue Fh",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "net_revenue_fq",
+"label": "Net Revenue Fq",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "net_revenue_fy",
+"label": "Net Revenue Fy",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "net_revenue_ttm",
+"label": "Net Revenue Ttm",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "non_gaap_price_to_earnings_per_share_forecast_next_fy",
+"label": "Non Gaap Price To Earnings Per Share Forecast Next Fy",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "oper_income_fh",
+"label": "Oper Income Fh",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "oper_income_fq",
+"label": "Oper Income Fq",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "oper_income_fy",
+"label": "Oper Income Fy",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "oper_income_per_employee_fy",
+"label": "Oper Income Per Employee Fy",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "oper_income_ttm",
+"label": "Oper Income Ttm",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "operating_cash_flow_per_share_current",
+"label": "Operating Cash Flow Per Share Current",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "operating_cash_flow_per_share_fh",
+"label": "Operating Cash Flow Per Share Fh",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "operating_cash_flow_per_share_fq",
+"label": "Operating Cash Flow Per Share Fq",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "operating_cash_flow_per_share_fy",
+"label": "Operating Cash Flow Per Share Fy",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "operating_cash_flow_per_share_ttm",
+"label": "Operating Cash Flow Per Share Ttm",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "price_revenue_ttm",
+"label": "Price Revenue Ttm",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "price_to_cash_f_operating_activities_ttm",
+"label": "Price To Cash F Operating Activities Ttm",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "rates_earnings_fq",
+"label": "Rates Earnings Fq",
+"group": "Income",
+"type": "str",
+"unit": ""
+},
+{
+"id": "rates_earnings_next_fq",
+"label": "Rates Earnings Next Fq",
+"group": "Income",
+"type": "str",
+"unit": ""
+},
+{
+"id": "revenue_forecast_fq",
+"label": "Revenue Forecast Fq",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "revenue_forecast_next_fh",
+"label": "Revenue Forecast Next Fh",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "revenue_forecast_next_fq",
+"label": "Revenue Forecast Next Fq",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "revenue_forecast_next_fy",
+"label": "Revenue Forecast Next Fy",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "revenue_fq",
+"label": "Revenue Fq",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "revenue_per_employee",
+"label": "Revenue Per Employee",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "revenue_per_employee_fy",
+"label": "Revenue Per Employee Fy",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "revenue_per_share_current",
+"label": "Revenue Per Share Current",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "revenue_per_share_fh",
+"label": "Revenue Per Share Fh",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "revenue_per_share_fq",
+"label": "Revenue Per Share Fq",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "revenue_per_share_fy",
+"label": "Revenue Per Share Fy",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "revenue_per_share_ttm",
+"label": "Revenue Per Share Ttm",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "revenue_surprise_fq",
+"label": "Revenue Surprise Fq",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "revenue_surprise_percent_fq",
+"label": "Revenue Surprise Percent Fq",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "revenues_fq_h",
+"label": "Revenues Fq H",
+"group": "Income",
+"type": "str",
+"unit": ""
+},
+{
+"id": "top_revenue_country_code",
+"label": "Top Revenue Country Code",
+"group": "Income",
+"type": "str",
+"unit": ""
+},
+{
+"id": "total_debt_to_ebitda_fq",
+"label": "Total Debt To Ebitda Fq",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "total_debt_to_ebitda_fy",
+"label": "Total Debt To Ebitda Fy",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "total_revenue",
+"label": "Total Revenue",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_revenue_5y_growth_fy",
+"label": "Total Revenue 5y Growth Fy",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "total_revenue_cagr_5y",
+"label": "Total Revenue Cagr 5y",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "total_revenue_fh",
+"label": "Total Revenue Fh",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_revenue_fq",
+"label": "Total Revenue Fq",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_revenue_fq_h",
+"label": "Total Revenue Fq H",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "total_revenue_fy",
+"label": "Total Revenue Fy",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_revenue_fy_h",
+"label": "Total Revenue Fy H",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "total_revenue_qoq_growth_fq",
+"label": "Total Revenue Qoq Growth Fq",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "total_revenue_ttm",
+"label": "Total Revenue Ttm",
+"group": "Income",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "total_revenue_ttm_h",
+"label": "Total Revenue Ttm H",
+"group": "Income",
+"type": "num",
+"unit": ""
+},
+{
+"id": "total_revenue_yoy_growth_fq",
+"label": "Total Revenue Yoy Growth Fq",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "total_revenue_yoy_growth_fy",
+"label": "Total Revenue Yoy Growth Fy",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "total_revenue_yoy_growth_ttm",
+"label": "Total Revenue Yoy Growth Ttm",
+"group": "Income",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "BB.basis",
+"label": "BB Basis",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "BB.basis_50",
+"label": "BB Basis 50",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "BB.lower",
+"label": "BB Lower",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "BB.lower_50",
+"label": "BB Lower 50",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "BB.upper",
+"label": "BB Upper",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "BB.upper_50",
+"label": "BB Upper 50",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA10",
+"label": "EMA10",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA100",
+"label": "EMA100",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA12",
+"label": "EMA12",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA120",
+"label": "EMA120",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA13",
+"label": "EMA13",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA14",
+"label": "EMA14",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA144",
+"label": "EMA144",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA15",
+"label": "EMA15",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA150",
+"label": "EMA150",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA2",
+"label": "EMA2",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA20",
+"label": "EMA20",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA200",
+"label": "EMA200",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA21",
+"label": "EMA21",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA25",
+"label": "EMA25",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA250",
+"label": "EMA250",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA26",
+"label": "EMA26",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA3",
+"label": "EMA3",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA30",
+"label": "EMA30",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA300",
+"label": "EMA300",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA34",
+"label": "EMA34",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA40",
+"label": "EMA40",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA5",
+"label": "EMA5",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA50",
+"label": "EMA50",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA55",
+"label": "EMA55",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA6",
+"label": "EMA6",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA60",
+"label": "EMA60",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA7",
+"label": "EMA7",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA75",
+"label": "EMA75",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA8",
+"label": "EMA8",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA89",
+"label": "EMA89",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "EMA9",
+"label": "EMA9",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "HullMA20",
+"label": "HullMA20",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "HullMA200",
+"label": "HullMA200",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "HullMA9",
+"label": "HullMA9",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Ichimoku.BLine",
+"label": "Ichimoku BLine",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Ichimoku.BLine_20_60_120_30",
+"label": "Ichimoku BLine 20 60 120 30",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Ichimoku.CLine",
+"label": "Ichimoku CLine",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Ichimoku.CLine_20_60_120_30",
+"label": "Ichimoku CLine 20 60 120 30",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Ichimoku.Lead1",
+"label": "Ichimoku Lead1",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Ichimoku.Lead1_20_60_120_30",
+"label": "Ichimoku Lead1 20 60 120 30",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Ichimoku.Lead2",
+"label": "Ichimoku Lead2",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Ichimoku.Lead2_20_60_120_30",
+"label": "Ichimoku Lead2 20 60 120 30",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "P.SAR",
+"label": "P SAR",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Camarilla.Middle",
+"label": "Pivot M Camarilla Middle",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Camarilla.R1",
+"label": "Pivot M Camarilla R1",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Camarilla.R2",
+"label": "Pivot M Camarilla R2",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Camarilla.R3",
+"label": "Pivot M Camarilla R3",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Camarilla.S1",
+"label": "Pivot M Camarilla S1",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Camarilla.S2",
+"label": "Pivot M Camarilla S2",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Camarilla.S3",
+"label": "Pivot M Camarilla S3",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Classic.Middle",
+"label": "Pivot M Classic Middle",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Classic.R1",
+"label": "Pivot M Classic R1",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Classic.R2",
+"label": "Pivot M Classic R2",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Classic.R3",
+"label": "Pivot M Classic R3",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Classic.S1",
+"label": "Pivot M Classic S1",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Classic.S2",
+"label": "Pivot M Classic S2",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Classic.S3",
+"label": "Pivot M Classic S3",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Demark.Middle",
+"label": "Pivot M Demark Middle",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Demark.R1",
+"label": "Pivot M Demark R1",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Demark.S1",
+"label": "Pivot M Demark S1",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Woodie.Middle",
+"label": "Pivot M Woodie Middle",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Woodie.R1",
+"label": "Pivot M Woodie R1",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Woodie.R2",
+"label": "Pivot M Woodie R2",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Woodie.R3",
+"label": "Pivot M Woodie R3",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Woodie.S1",
+"label": "Pivot M Woodie S1",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Woodie.S2",
+"label": "Pivot M Woodie S2",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Woodie.S3",
+"label": "Pivot M Woodie S3",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "premarket_change",
+"label": "Premarket Change",
+"group": "MovingAverages",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "premarket_change_abs",
+"label": "Premarket Change Abs",
+"group": "MovingAverages",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "premarket_change_from_open",
+"label": "Premarket Change From Open",
+"group": "MovingAverages",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "premarket_change_from_open_abs",
+"label": "Premarket Change From Open Abs",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "premarket_close",
+"label": "Premarket Close",
+"group": "MovingAverages",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "premarket_gap",
+"label": "Premarket Gap",
+"group": "MovingAverages",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "premarket_high",
+"label": "Premarket High",
+"group": "MovingAverages",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "premarket_low",
+"label": "Premarket Low",
+"group": "MovingAverages",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "premarket_open",
+"label": "Premarket Open",
+"group": "MovingAverages",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "premarket_time",
+"label": "Premarket Time",
+"group": "MovingAverages",
+"type": "str",
+"unit": ""
+},
+{
+"id": "premarket_volume",
+"label": "Premarket Volume",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Rec.HullMA9",
+"label": "Rec HullMA9",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Rec.Ichimoku",
+"label": "Rec Ichimoku",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Rec.VWMA",
+"label": "Rec VWMA",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA10",
+"label": "SMA10",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA100",
+"label": "SMA100",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA12",
+"label": "SMA12",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA120",
+"label": "SMA120",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA13",
+"label": "SMA13",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA14",
+"label": "SMA14",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA144",
+"label": "SMA144",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA15",
+"label": "SMA15",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA150",
+"label": "SMA150",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA2",
+"label": "SMA2",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA20",
+"label": "SMA20",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA200",
+"label": "SMA200",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA21",
+"label": "SMA21",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA25",
+"label": "SMA25",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA250",
+"label": "SMA250",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA26",
+"label": "SMA26",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA3",
+"label": "SMA3",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA30",
+"label": "SMA30",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA300",
+"label": "SMA300",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA34",
+"label": "SMA34",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA40",
+"label": "SMA40",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA5",
+"label": "SMA5",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA50",
+"label": "SMA50",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA55",
+"label": "SMA55",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA6",
+"label": "SMA6",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA60",
+"label": "SMA60",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA7",
+"label": "SMA7",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA75",
+"label": "SMA75",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA8",
+"label": "SMA8",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA89",
+"label": "SMA89",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "SMA9",
+"label": "SMA9",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "VWAP",
+"label": "VWAP",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "VWMA",
+"label": "VWMA",
+"group": "MovingAverages",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX",
+"label": "ADX",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX_100",
+"label": "ADX 100",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX_20",
+"label": "ADX 20",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX_50",
+"label": "ADX 50",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX_9",
+"label": "ADX 9",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX+DI",
+"label": "ADX+DI",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX+DI_100",
+"label": "ADX+DI 100",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX+DI_100[1]",
+"label": "ADX+DI 100[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX+DI_20",
+"label": "ADX+DI 20",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX+DI_20[1]",
+"label": "ADX+DI 20[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX+DI_50",
+"label": "ADX+DI 50",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX+DI_50[1]",
+"label": "ADX+DI 50[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX+DI_9",
+"label": "ADX+DI 9",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX+DI_9[1]",
+"label": "ADX+DI 9[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX+DI[1]",
+"label": "ADX+DI[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX-DI",
+"label": "ADX-DI",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX-DI_100",
+"label": "ADX-DI 100",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX-DI_100[1]",
+"label": "ADX-DI 100[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX-DI_20",
+"label": "ADX-DI 20",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX-DI_20[1]",
+"label": "ADX-DI 20[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX-DI_50",
+"label": "ADX-DI 50",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX-DI_50[1]",
+"label": "ADX-DI 50[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX-DI_9",
+"label": "ADX-DI 9",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX-DI_9[1]",
+"label": "ADX-DI 9[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADX-DI[1]",
+"label": "ADX-DI[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "AO",
+"label": "AO",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "AO[1]",
+"label": "AO[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "AO[2]",
+"label": "AO[2]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "BBPower",
+"label": "BBPower",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "CCI20",
+"label": "CCI20",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "CCI20[1]",
+"label": "CCI20[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "MACD.hist",
+"label": "MACD Hist",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "MACD.macd",
+"label": "MACD Macd",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "MACD.signal",
+"label": "MACD Signal",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Mom",
+"label": "Mom",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Mom_14",
+"label": "Mom 14",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Mom_14[1]",
+"label": "Mom 14[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Mom[1]",
+"label": "Mom[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Fibonacci.Middle",
+"label": "Pivot M Fibonacci Middle",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Fibonacci.R1",
+"label": "Pivot M Fibonacci R1",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Fibonacci.R2",
+"label": "Pivot M Fibonacci R2",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Fibonacci.R3",
+"label": "Pivot M Fibonacci R3",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Fibonacci.S1",
+"label": "Pivot M Fibonacci S1",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Fibonacci.S2",
+"label": "Pivot M Fibonacci S2",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Pivot.M.Fibonacci.S3",
+"label": "Pivot M Fibonacci S3",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ROC",
+"label": "ROC",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "RSI",
+"label": "RSI",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "RSI10",
+"label": "RSI10",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "RSI10[1]",
+"label": "RSI10[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "RSI2",
+"label": "RSI2",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "RSI20",
+"label": "RSI20",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "RSI20[1]",
+"label": "RSI20[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "RSI21",
+"label": "RSI21",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "RSI21[1]",
+"label": "RSI21[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "RSI2[1]",
+"label": "RSI2[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "RSI3",
+"label": "RSI3",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "RSI30",
+"label": "RSI30",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "RSI30[1]",
+"label": "RSI30[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "RSI3[1]",
+"label": "RSI3[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "RSI4",
+"label": "RSI4",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "RSI4[1]",
+"label": "RSI4[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "RSI5",
+"label": "RSI5",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "RSI5[1]",
+"label": "RSI5[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "RSI7",
+"label": "RSI7",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "RSI7[1]",
+"label": "RSI7[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "RSI9",
+"label": "RSI9",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "RSI9[1]",
+"label": "RSI9[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "RSI[1]",
+"label": "RSI[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Rec.BBPower",
+"label": "Rec BBPower",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Rec.Stoch.RSI",
+"label": "Rec Stoch RSI",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Rec.UO",
+"label": "Rec UO",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Recommend.All",
+"label": "Recommend All",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Recommend.MA",
+"label": "Recommend MA",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Recommend.Other",
+"label": "Recommend Other",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "recommendation_buy",
+"label": "Recommendation Buy",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "recommendation_hold",
+"label": "Recommendation Hold",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "recommendation_mark",
+"label": "Recommendation Mark",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "recommendation_over",
+"label": "Recommendation Over",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "recommendation_sell",
+"label": "Recommendation Sell",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "recommendation_total",
+"label": "Recommendation Total",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "recommendation_under",
+"label": "Recommendation Under",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Stoch.D",
+"label": "Stoch D",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Stoch.D_14_1_3",
+"label": "Stoch D 14 1 3",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Stoch.D_14_1_3[1]",
+"label": "Stoch D 14 1 3[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Stoch.D_5_3_3",
+"label": "Stoch D 5 3 3",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Stoch.D_5_3_3[1]",
+"label": "Stoch D 5 3 3[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Stoch.D_6_3_3",
+"label": "Stoch D 6 3 3",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Stoch.D_6_3_3[1]",
+"label": "Stoch D 6 3 3[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Stoch.D_8_3_3",
+"label": "Stoch D 8 3 3",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Stoch.D_8_3_3[1]",
+"label": "Stoch D 8 3 3[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Stoch.D[1]",
+"label": "Stoch D[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Stoch.K",
+"label": "Stoch K",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Stoch.K_14_1_3",
+"label": "Stoch K 14 1 3",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Stoch.K_14_1_3[1]",
+"label": "Stoch K 14 1 3[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Stoch.K_5_3_3",
+"label": "Stoch K 5 3 3",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Stoch.K_5_3_3[1]",
+"label": "Stoch K 5 3 3[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Stoch.K_6_3_3",
+"label": "Stoch K 6 3 3",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Stoch.K_6_3_3[1]",
+"label": "Stoch K 6 3 3[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Stoch.K_8_3_3",
+"label": "Stoch K 8 3 3",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Stoch.K_8_3_3[1]",
+"label": "Stoch K 8 3 3[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Stoch.K[1]",
+"label": "Stoch K[1]",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Stoch.RSI.D",
+"label": "Stoch RSI D",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Stoch.RSI.K",
+"label": "Stoch RSI K",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "UO",
+"label": "UO",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "W.R",
+"label": "W R",
+"group": "Oscillators",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADR",
+"label": "ADR",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ADRP",
+"label": "ADRP",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "active_symbol",
+"label": "Active Symbol",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "actively_managed",
+"label": "Actively Managed",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "altman_z_score_fy",
+"label": "Altman Z Score Fy",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "altman_z_score_ttm",
+"label": "Altman Z Score Ttm",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "amount_recent",
+"label": "Amount Recent",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "amount_upcoming",
+"label": "Amount Upcoming",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "Aroon.Down",
+"label": "Aroon Down",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Aroon.Up",
+"label": "Aroon Up",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "aum",
+"label": "Aum",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "bars_count",
+"label": "Bars Count",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "brand",
+"label": "Brand",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "buyback_yield",
+"label": "Buyback Yield",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "Candle.3BlackCrows",
+"label": "Candle 3BlackCrows",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.3WhiteSoldiers",
+"label": "Candle 3WhiteSoldiers",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.AbandonedBaby.Bearish",
+"label": "Candle AbandonedBaby Bearish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.AbandonedBaby.Bullish",
+"label": "Candle AbandonedBaby Bullish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.DarkCloudCover.Bearish",
+"label": "Candle DarkCloudCover Bearish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.Doji",
+"label": "Candle Doji",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.Doji.Dragonfly",
+"label": "Candle Doji Dragonfly",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.Doji.Gravestone",
+"label": "Candle Doji Gravestone",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.DojiStar.Bearish",
+"label": "Candle DojiStar Bearish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.DojiStar.Bullish",
+"label": "Candle DojiStar Bullish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.Engulfing.Bearish",
+"label": "Candle Engulfing Bearish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.Engulfing.Bullish",
+"label": "Candle Engulfing Bullish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.EveningDojiStar.Bearish",
+"label": "Candle EveningDojiStar Bearish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.EveningStar",
+"label": "Candle EveningStar",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.FallingThreeMethods.Bearish",
+"label": "Candle FallingThreeMethods Bearish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.FallingWindow.Bearish",
+"label": "Candle FallingWindow Bearish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.Hammer",
+"label": "Candle Hammer",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.HangingMan",
+"label": "Candle HangingMan",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.Harami.Bearish",
+"label": "Candle Harami Bearish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.Harami.Bullish",
+"label": "Candle Harami Bullish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.HaramiCross.Bearish",
+"label": "Candle HaramiCross Bearish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.HaramiCross.Bullish",
+"label": "Candle HaramiCross Bullish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.InvertedHammer",
+"label": "Candle InvertedHammer",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.Kicking.Bearish",
+"label": "Candle Kicking Bearish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.Kicking.Bullish",
+"label": "Candle Kicking Bullish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.LongShadow.Upper",
+"label": "Candle LongShadow Upper",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.Marubozu.Black",
+"label": "Candle Marubozu Black",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.Marubozu.White",
+"label": "Candle Marubozu White",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.MorningDojiStar.Bullish",
+"label": "Candle MorningDojiStar Bullish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.MorningStar",
+"label": "Candle MorningStar",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.OnNeck.Bearish",
+"label": "Candle OnNeck Bearish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.Piercing.Bullish",
+"label": "Candle Piercing Bullish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.RisingThreeMethods.Bullish",
+"label": "Candle RisingThreeMethods Bullish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.RisingWindow.Bullish",
+"label": "Candle RisingWindow Bullish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.ShootingStar",
+"label": "Candle ShootingStar",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.SpinningTop.Black",
+"label": "Candle SpinningTop Black",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.SpinningTop.White",
+"label": "Candle SpinningTop White",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.TriStar.Bearish",
+"label": "Candle TriStar Bearish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.TriStar.Bullish",
+"label": "Candle TriStar Bullish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.TweezerBottom.Bullish",
+"label": "Candle TweezerBottom Bullish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.TweezerTop.Bearish",
+"label": "Candle TweezerTop Bearish",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "capex_per_share_current",
+"label": "Capex Per Share Current",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "capex_per_share_fh",
+"label": "Capex Per Share Fh",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "capex_per_share_fq",
+"label": "Capex Per Share Fq",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "capex_per_share_fy",
+"label": "Capex Per Share Fy",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "capex_per_share_ttm",
+"label": "Capex Per Share Ttm",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "capital_expenditures_fh",
+"label": "Capital Expenditures Fh",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "capital_expenditures_fq",
+"label": "Capital Expenditures Fq",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "capital_expenditures_fy",
+"label": "Capital Expenditures Fy",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "capital_expenditures_qoq_growth_fq",
+"label": "Capital Expenditures Qoq Growth Fq",
+"group": "Other",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "capital_expenditures_ttm",
+"label": "Capital Expenditures Ttm",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "capital_expenditures_yoy_growth_fq",
+"label": "Capital Expenditures Yoy Growth Fq",
+"group": "Other",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "capital_expenditures_yoy_growth_fy",
+"label": "Capital Expenditures Yoy Growth Fy",
+"group": "Other",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "capital_expenditures_yoy_growth_ttm",
+"label": "Capital Expenditures Yoy Growth Ttm",
+"group": "Other",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "category",
+"label": "Category",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "cfi_code",
+"label": "Cfi Code",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "coupon",
+"label": "Coupon",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "current_session",
+"label": "Current Session",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "current_yield",
+"label": "Current Yield",
+"group": "Other",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "daily-bar.time",
+"label": "Daily-bar Time",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "days_to_maturity",
+"label": "Days To Maturity",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "DonchCh20.Middle",
+"label": "DonchCh20 Middle",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "DonchCh20.Upper",
+"label": "DonchCh20 Upper",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ebit_per_share_current",
+"label": "Ebit Per Share Current",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "ebit_per_share_fh",
+"label": "Ebit Per Share Fh",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "ebit_per_share_fq",
+"label": "Ebit Per Share Fq",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "ebit_per_share_fy",
+"label": "Ebit Per Share Fy",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "ebit_per_share_ttm",
+"label": "Ebit Per Share Ttm",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "ebit_ttm",
+"label": "Ebit Ttm",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "etf_holdings_count",
+"label": "Etf Holdings Count",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "expense_ratio",
+"label": "Expense Ratio",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "expiration",
+"label": "Expiration",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "first_bar_time",
+"label": "First Bar Time",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "fiscal_period_current",
+"label": "Fiscal Period Current",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "fiscal_period_end_current",
+"label": "Fiscal Period End Current",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "fiscal_period_end_fh",
+"label": "Fiscal Period End Fh",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "fiscal_period_end_fh_h",
+"label": "Fiscal Period End Fh H",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "fiscal_period_end_fq",
+"label": "Fiscal Period End Fq",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "fiscal_period_end_fy",
+"label": "Fiscal Period End Fy",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "fiscal_period_fy",
+"label": "Fiscal Period Fy",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "fiscal_period_fy_h",
+"label": "Fiscal Period Fy H",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "focus",
+"label": "Focus",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "fractional",
+"label": "Fractional",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "frequency_recent",
+"label": "Frequency Recent",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "frequency_upcoming",
+"label": "Frequency Upcoming",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "goodwill",
+"label": "Goodwill",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "goodwill_fq",
+"label": "Goodwill Fq",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "goodwill_fy",
+"label": "Goodwill Fy",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "graham_numbers_fy",
+"label": "Graham Numbers Fy",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "graham_numbers_ttm",
+"label": "Graham Numbers Ttm",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "has_ipo_data",
+"label": "Has Ipo Data",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "has_ipo_details_visible",
+"label": "Has Ipo Details Visible",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "holdings_region",
+"label": "Holdings Region",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "holds_derivatives_flag",
+"label": "Holds Derivatives Flag",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "index",
+"label": "Index",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "index_id",
+"label": "Index Id",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "index_priority",
+"label": "Index Priority",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "index_provider",
+"label": "Index Provider",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "indexes",
+"label": "Indexes",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "indicators_bars_count",
+"label": "Indicators Bars Count",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "interst_cover_fy",
+"label": "Interst Cover Fy",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "interst_cover_ttm",
+"label": "Interst Cover Ttm",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "invent_turnover_current",
+"label": "Invent Turnover Current",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "invent_turnover_fy",
+"label": "Invent Turnover Fy",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "inverse_flag",
+"label": "Inverse Flag",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ipo_announcement_date",
+"label": "Ipo Announcement Date",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "ipo_blank_check_flag",
+"label": "Ipo Blank Check Flag",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "ipo_deal_amount_usd",
+"label": "Ipo Deal Amount Usd",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ipo_offer_date",
+"label": "Ipo Offer Date",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "ipo_offer_price_usd",
+"label": "Ipo Offer Price Usd",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ipo_offer_time",
+"label": "Ipo Offer Time",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "ipo_price_range_usd_max",
+"label": "Ipo Price Range Usd Max",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ipo_price_range_usd_min",
+"label": "Ipo Price Range Usd Min",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ipo_splitfactor_to_offer",
+"label": "Ipo Splitfactor To Offer",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "is_blacklisted",
+"label": "Is Blacklisted",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "is_primary",
+"label": "Is Primary",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "is_shariah_compliant",
+"label": "Is Shariah Compliant",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "is_symbol_primary_listing",
+"label": "Is Symbol Primary Listing",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "issuance_of_stock_net_ttm",
+"label": "Issuance Of Stock Net Ttm",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "issuer",
+"label": "Issuer",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "k1_form",
+"label": "K1 Form",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "kind",
+"label": "Kind",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "kind-delay",
+"label": "Kind-delay",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "KltChnl.basis",
+"label": "KltChnl Basis",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "KltChnl.upper",
+"label": "KltChnl Upper",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "last_bar_update_time",
+"label": "Last Bar Update Time",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "last_report_frequency",
+"label": "Last Report Frequency",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "last-price-update-time",
+"label": "Last-price-update-time",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "last-price-update-time-intraday",
+"label": "Last-price-update-time-intraday",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "launch_date",
+"label": "Launch Date",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "leverage",
+"label": "Leverage",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "leverage_ratio",
+"label": "Leverage Ratio",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "leveraged_flag",
+"label": "Leveraged Flag",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "long_term_capital",
+"label": "Long Term Capital",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "market",
+"label": "Market",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "maturity_date",
+"label": "Maturity Date",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "minmov",
+"label": "Minmov",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "minmove2",
+"label": "Minmove2",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "minute-bar.time",
+"label": "Minute-bar Time",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "most_recent_quarter_date",
+"label": "Most Recent Quarter Date",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "nav",
+"label": "Nav",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "nav_discount_premium",
+"label": "Nav Discount Premium",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "nav_total_return.1M",
+"label": "Nav Total Return 1M",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "nav_total_return.1Y",
+"label": "Nav Total Return 1Y",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "nav_total_return.3M",
+"label": "Nav Total Return 3M",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "nav_total_return.3Y",
+"label": "Nav Total Return 3Y",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "nav_total_return.5Y",
+"label": "Nav Total Return 5Y",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "nav_total_return.6M",
+"label": "Nav Total Return 6M",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "nav_total_return.YTD",
+"label": "Nav Total Return YTD",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ncavps_ratio_current",
+"label": "Ncavps Ratio Current",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "ncavps_ratio_fh",
+"label": "Ncavps Ratio Fh",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "ncavps_ratio_fq",
+"label": "Ncavps Ratio Fq",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "ncavps_ratio_fy",
+"label": "Ncavps Ratio Fy",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "neg_capital_expenditures_fh",
+"label": "Neg Capital Expenditures Fh",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "neg_capital_expenditures_fq",
+"label": "Neg Capital Expenditures Fq",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "neg_capital_expenditures_fy",
+"label": "Neg Capital Expenditures Fy",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "neg_capital_expenditures_ttm",
+"label": "Neg Capital Expenditures Ttm",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "neg_research_and_dev_fh",
+"label": "Neg Research And Dev Fh",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "neg_research_and_dev_fq",
+"label": "Neg Research And Dev Fq",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "neg_research_and_dev_fy",
+"label": "Neg Research And Dev Fy",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "neg_research_and_dev_ttm",
+"label": "Neg Research And Dev Ttm",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "niche",
+"label": "Niche",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "number_of_employees",
+"label": "Number Of Employees",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "number_of_employees_fy",
+"label": "Number Of Employees Fy",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "number_of_shareholders",
+"label": "Number Of Shareholders",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "number_of_shareholders_fy",
+"label": "Number Of Shareholders Fy",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "payment_date_recent",
+"label": "Payment Date Recent",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "payment_date_upcoming",
+"label": "Payment Date Upcoming",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "piotroski_f_score_fy",
+"label": "Piotroski F Score Fy",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "piotroski_f_score_ttm",
+"label": "Piotroski F Score Ttm",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "price_annual_sales",
+"label": "Price Annual Sales",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "price_target_1y",
+"label": "Price Target 1y",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "price_target_1y_delta",
+"label": "Price Target 1y Delta",
+"group": "Other",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "price_target_average",
+"label": "Price Target Average",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "price_target_median",
+"label": "Price Target Median",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "price_to_working_capital_fq",
+"label": "Price To Working Capital Fq",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "pricescale",
+"label": "Pricescale",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "provider-id",
+"label": "Provider-id",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "rates_cf",
+"label": "Rates Cf",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "rates_current",
+"label": "Rates Current",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "rates_fh",
+"label": "Rates Fh",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "rates_fq",
+"label": "Rates Fq",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "rates_fy",
+"label": "Rates Fy",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "rates_mc",
+"label": "Rates Mc",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "rates_pt",
+"label": "Rates Pt",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "rates_time_series",
+"label": "Rates Time Series",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "rates_ttm",
+"label": "Rates Ttm",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "Rec.WR",
+"label": "Rec WR",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "receivables_turnover_fq",
+"label": "Receivables Turnover Fq",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "receivables_turnover_fy",
+"label": "Receivables Turnover Fy",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "research_and_dev_fh",
+"label": "Research And Dev Fh",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "research_and_dev_fq",
+"label": "Research And Dev Fq",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "research_and_dev_fy",
+"label": "Research And Dev Fy",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "research_and_dev_per_employee_fy",
+"label": "Research And Dev Per Employee Fy",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "research_and_dev_ratio_fy",
+"label": "Research And Dev Ratio Fy",
+"group": "Other",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "research_and_dev_ratio_ttm",
+"label": "Research And Dev Ratio Ttm",
+"group": "Other",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "research_and_dev_ttm",
+"label": "Research And Dev Ttm",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "return_of_invested_capital_percent_ttm",
+"label": "Return Of Invested Capital Percent Ttm",
+"group": "Other",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "rtc",
+"label": "Rtc",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "selection_criteria",
+"label": "Selection Criteria",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "sell_gen_admin_exp_other_fy",
+"label": "Sell Gen Admin Exp Other Fy",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "sell_gen_admin_exp_other_ratio_fy",
+"label": "Sell Gen Admin Exp Other Ratio Fy",
+"group": "Other",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "sell_gen_admin_exp_other_ratio_ttm",
+"label": "Sell Gen Admin Exp Other Ratio Ttm",
+"group": "Other",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "sell_gen_admin_exp_other_ttm",
+"label": "Sell Gen Admin Exp Other Ttm",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "share_buyback_ratio_fq",
+"label": "Share Buyback Ratio Fq",
+"group": "Other",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "share_buyback_ratio_fy",
+"label": "Share Buyback Ratio Fy",
+"group": "Other",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "sloan_ratio_fy",
+"label": "Sloan Ratio Fy",
+"group": "Other",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "sloan_ratio_ttm",
+"label": "Sloan Ratio Ttm",
+"group": "Other",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "source-logoid",
+"label": "Source-logoid",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "strategy",
+"label": "Strategy",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "submarket",
+"label": "Submarket",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "sustainable_growth_rate_fy",
+"label": "Sustainable Growth Rate Fy",
+"group": "Other",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "sustainable_growth_rate_ttm",
+"label": "Sustainable Growth Rate Ttm",
+"group": "Other",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "time",
+"label": "Time",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "time_business_day",
+"label": "Time Business Day",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "tobin_q_ratio_fq",
+"label": "Tobin Q Ratio Fq",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "tobin_q_ratio_fy",
+"label": "Tobin Q Ratio Fy",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "total_capital",
+"label": "Total Capital",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "transparent_holding_flag",
+"label": "Transparent Holding Flag",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "ucits_compliant_flag",
+"label": "Ucits Compliant Flag",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "update_mode",
+"label": "Update Mode",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "update_time",
+"label": "Update Time",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "update-time",
+"label": "Update-time",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "weight_top_10",
+"label": "Weight Top 10",
+"group": "Other",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "weight_top_25",
+"label": "Weight Top 25",
+"group": "Other",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "weight_top_50",
+"label": "Weight Top 50",
+"group": "Other",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "weighting_scheme",
+"label": "Weighting Scheme",
+"group": "Other",
+"type": "str",
+"unit": ""
+},
+{
+"id": "working_capital_fq",
+"label": "Working Capital Fq",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "working_capital_per_share_current",
+"label": "Working Capital Per Share Current",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "working_capital_per_share_fh",
+"label": "Working Capital Per Share Fh",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "working_capital_per_share_fq",
+"label": "Working Capital Per Share Fq",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "working_capital_per_share_fy",
+"label": "Working Capital Per Share Fy",
+"group": "Other",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "yield_recent",
+"label": "Yield Recent",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "yield_upcoming",
+"label": "Yield Upcoming",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "zmijewski_score_fy",
+"label": "Zmijewski Score Fy",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "zmijewski_score_ttm",
+"label": "Zmijewski Score Ttm",
+"group": "Other",
+"type": "num",
+"unit": ""
+},
+{
+"id": "aum_perf.1M",
+"label": "Aum Perf 1M",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "aum_perf.1Y",
+"label": "Aum Perf 1Y",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "aum_perf.3M",
+"label": "Aum Perf 3M",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "aum_perf.3Y",
+"label": "Aum Perf 3Y",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "aum_perf.5Y",
+"label": "Aum Perf 5Y",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "aum_perf.YTD",
+"label": "Aum Perf YTD",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.DownsideTasukiGap.Bearish",
+"label": "Candle DownsideTasukiGap Bearish",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Candle.UpsideTasukiGap.Bullish",
+"label": "Candle UpsideTasukiGap Bullish",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "capital_expenditures_unchanged_fq_h",
+"label": "Capital Expenditures Unchanged Fq H",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "capital_expenditures_unchanged_fy_h",
+"label": "Capital Expenditures Unchanged Fy H",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "capital_expenditures_unchanged_ttm_h",
+"label": "Capital Expenditures Unchanged Ttm H",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "change",
+"label": "Change",
+"group": "Performance",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "change_abs",
+"label": "Change Abs",
+"group": "Performance",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "change_from_open",
+"label": "Change From Open",
+"group": "Performance",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "change_from_open_abs",
+"label": "Change From Open Abs",
+"group": "Performance",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "exchange",
+"label": "Exchange",
+"group": "Performance",
+"type": "str",
+"unit": ""
+},
+{
+"id": "gap",
+"label": "Gap",
+"group": "Performance",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "gap_down",
+"label": "Gap Down",
+"group": "Performance",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "gap_down_abs",
+"label": "Gap Down Abs",
+"group": "Performance",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "gap_up",
+"label": "Gap Up",
+"group": "Performance",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "gap_up_abs",
+"label": "Gap Up Abs",
+"group": "Performance",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "High.1M",
+"label": "High 1M",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "High.1M.Date",
+"label": "High 1M Date",
+"group": "Performance",
+"type": "str",
+"unit": ""
+},
+{
+"id": "High.3M",
+"label": "High 3M",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "High.3M.Date",
+"label": "High 3M Date",
+"group": "Performance",
+"type": "str",
+"unit": ""
+},
+{
+"id": "High.5D",
+"label": "High 5D",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "High.6M",
+"label": "High 6M",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "High.6M.Date",
+"label": "High 6M Date",
+"group": "Performance",
+"type": "str",
+"unit": ""
+},
+{
+"id": "High.All",
+"label": "High All",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "High.All.Calc",
+"label": "High All Calc",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "High.All.Calc.Date",
+"label": "High All Calc Date",
+"group": "Performance",
+"type": "str",
+"unit": ""
+},
+{
+"id": "High.All.Date",
+"label": "High All Date",
+"group": "Performance",
+"type": "str",
+"unit": ""
+},
+{
+"id": "ipo_offer_price_performance",
+"label": "Ipo Offer Price Performance",
+"group": "Performance",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "Low.1M",
+"label": "Low 1M",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Low.1M.Date",
+"label": "Low 1M Date",
+"group": "Performance",
+"type": "str",
+"unit": ""
+},
+{
+"id": "Low.3M",
+"label": "Low 3M",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Low.3M.Date",
+"label": "Low 3M Date",
+"group": "Performance",
+"type": "str",
+"unit": ""
+},
+{
+"id": "Low.5D",
+"label": "Low 5D",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Low.6M",
+"label": "Low 6M",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Low.6M.Date",
+"label": "Low 6M Date",
+"group": "Performance",
+"type": "str",
+"unit": ""
+},
+{
+"id": "Low.After.High.All",
+"label": "Low After High All",
+"group": "Performance",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "low_after_high_all_change",
+"label": "Low After High All Change",
+"group": "Performance",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "low_after_high_all_change_abs",
+"label": "Low After High All Change Abs",
+"group": "Performance",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "Low.All",
+"label": "Low All",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Low.All.Calc",
+"label": "Low All Calc",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Low.All.Calc.Date",
+"label": "Low All Calc Date",
+"group": "Performance",
+"type": "str",
+"unit": ""
+},
+{
+"id": "Low.All.Date",
+"label": "Low All Date",
+"group": "Performance",
+"type": "str",
+"unit": ""
+},
+{
+"id": "nav_perf.1M",
+"label": "Nav Perf 1M",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "nav_perf.1Y",
+"label": "Nav Perf 1Y",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "nav_perf.3M",
+"label": "Nav Perf 3M",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "nav_perf.3Y",
+"label": "Nav Perf 3Y",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "nav_perf.5Y",
+"label": "Nav Perf 5Y",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "nav_perf.YTD",
+"label": "Nav Perf YTD",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.10Y",
+"label": "Perf 10Y",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.10Y_abs",
+"label": "Perf 10Y Abs",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.1M",
+"label": "Perf 1M",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.1M_abs",
+"label": "Perf 1M Abs",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.1M.MarketCap",
+"label": "Perf 1M MarketCap",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.1W.MarketCap",
+"label": "Perf 1W MarketCap",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.1Y.MarketCap",
+"label": "Perf 1Y MarketCap",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.3M",
+"label": "Perf 3M",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.3M_abs",
+"label": "Perf 3M Abs",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.3M.MarketCap",
+"label": "Perf 3M MarketCap",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.3Y",
+"label": "Perf 3Y",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.3Y_abs",
+"label": "Perf 3Y Abs",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.5D",
+"label": "Perf 5D",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.5D_abs",
+"label": "Perf 5D Abs",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.5Y",
+"label": "Perf 5Y",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.5Y_abs",
+"label": "Perf 5Y Abs",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.5Y.MarketCap",
+"label": "Perf 5Y MarketCap",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.6M",
+"label": "Perf 6M",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.6M_abs",
+"label": "Perf 6M Abs",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.6M.MarketCap",
+"label": "Perf 6M MarketCap",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.All",
+"label": "Perf All",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.All_abs",
+"label": "Perf All Abs",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.W",
+"label": "Perf W",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.W_abs",
+"label": "Perf W Abs",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.Y",
+"label": "Perf Y",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.Y_abs",
+"label": "Perf Y Abs",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.YTD",
+"label": "Perf YTD",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.YTD_abs",
+"label": "Perf YTD Abs",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Perf.YTD.MarketCap",
+"label": "Perf YTD MarketCap",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "post_change",
+"label": "Post Change",
+"group": "Performance",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "postmarket_change",
+"label": "Postmarket Change",
+"group": "Performance",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "postmarket_change_abs",
+"label": "Postmarket Change Abs",
+"group": "Performance",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "postmarket_close",
+"label": "Postmarket Close",
+"group": "Performance",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "postmarket_high",
+"label": "Postmarket High",
+"group": "Performance",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "postmarket_low",
+"label": "Postmarket Low",
+"group": "Performance",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "postmarket_open",
+"label": "Postmarket Open",
+"group": "Performance",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "postmarket_time",
+"label": "Postmarket Time",
+"group": "Performance",
+"type": "str",
+"unit": ""
+},
+{
+"id": "pre_change",
+"label": "Pre Change",
+"group": "Performance",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "pre_change_abs",
+"label": "Pre Change Abs",
+"group": "Performance",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "price_52_week_high",
+"label": "Price 52 Week High",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "price_52_week_high_date",
+"label": "Price 52 Week High Date",
+"group": "Performance",
+"type": "str",
+"unit": ""
+},
+{
+"id": "price_52_week_low",
+"label": "Price 52 Week Low",
+"group": "Performance",
+"type": "num",
+"unit": ""
+},
+{
+"id": "price_52_week_low_date",
+"label": "Price 52 Week Low Date",
+"group": "Performance",
+"type": "str",
+"unit": ""
+},
+{
+"id": "all_time_high",
+"label": "All Time High",
+"group": "Price",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "all_time_high_day",
+"label": "All Time High Day",
+"group": "Price",
+"type": "str",
+"unit": ""
+},
+{
+"id": "all_time_low",
+"label": "All Time Low",
+"group": "Price",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "all_time_low_day",
+"label": "All Time Low Day",
+"group": "Price",
+"type": "str",
+"unit": ""
+},
+{
+"id": "all_time_open",
+"label": "All Time Open",
+"group": "Price",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "Candle.LongShadow.Lower",
+"label": "Candle LongShadow Lower",
+"group": "Price",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ChaikinMoneyFlow",
+"label": "ChaikinMoneyFlow",
+"group": "Price",
+"type": "num",
+"unit": ""
+},
+{
+"id": "close",
+"label": "Close",
+"group": "Price",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "DonchCh20.Lower",
+"label": "DonchCh20 Lower",
+"group": "Price",
+"type": "num",
+"unit": ""
+},
+{
+"id": "fund_flows.1M",
+"label": "Fund Flows 1M",
+"group": "Price",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "fund_flows.1Y",
+"label": "Fund Flows 1Y",
+"group": "Price",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "fund_flows.3M",
+"label": "Fund Flows 3M",
+"group": "Price",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "fund_flows.3Y",
+"label": "Fund Flows 3Y",
+"group": "Price",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "fund_flows.5Y",
+"label": "Fund Flows 5Y",
+"group": "Price",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "fund_flows.YTD",
+"label": "Fund Flows YTD",
+"group": "Price",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "high",
+"label": "High",
+"group": "Price",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "KltChnl.lower",
+"label": "KltChnl Lower",
+"group": "Price",
+"type": "num",
+"unit": ""
+},
+{
+"id": "low",
+"label": "Low",
+"group": "Price",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "MoneyFlow",
+"label": "MoneyFlow",
+"group": "Price",
+"type": "num",
+"unit": ""
+},
+{
+"id": "open",
+"label": "Open",
+"group": "Price",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "Open.All.Calc",
+"label": "Open All Calc",
+"group": "Price",
+"type": "num",
+"unit": ""
+},
+{
+"id": "price_target_high",
+"label": "Price Target High",
+"group": "Price",
+"type": "num",
+"unit": ""
+},
+{
+"id": "price_target_low",
+"label": "Price Target Low",
+"group": "Price",
+"type": "num",
+"unit": ""
+},
+{
+"id": "after_tax_margin",
+"label": "After Tax Margin",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "ebitda_margin_fy",
+"label": "Ebitda Margin Fy",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "ebitda_margin_ttm",
+"label": "Ebitda Margin Ttm",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "free_cash_flow_margin_fy",
+"label": "Free Cash Flow Margin Fy",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "free_cash_flow_margin_ttm",
+"label": "Free Cash Flow Margin Ttm",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "gross_margin",
+"label": "Gross Margin",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "gross_margin_fy",
+"label": "Gross Margin Fy",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "gross_margin_percent_ttm",
+"label": "Gross Margin Percent Ttm",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "gross_margin_ttm",
+"label": "Gross Margin Ttm",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "gross_profit",
+"label": "Gross Profit",
+"group": "Profitability",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "gross_profit_fh",
+"label": "Gross Profit Fh",
+"group": "Profitability",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "gross_profit_fq",
+"label": "Gross Profit Fq",
+"group": "Profitability",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "gross_profit_fq_h",
+"label": "Gross Profit Fq H",
+"group": "Profitability",
+"type": "num",
+"unit": ""
+},
+{
+"id": "gross_profit_fy",
+"label": "Gross Profit Fy",
+"group": "Profitability",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "gross_profit_fy_h",
+"label": "Gross Profit Fy H",
+"group": "Profitability",
+"type": "num",
+"unit": ""
+},
+{
+"id": "gross_profit_margin_fy",
+"label": "Gross Profit Margin Fy",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "gross_profit_qoq_growth_fq",
+"label": "Gross Profit Qoq Growth Fq",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "gross_profit_ttm",
+"label": "Gross Profit Ttm",
+"group": "Profitability",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "gross_profit_ttm_h",
+"label": "Gross Profit Ttm H",
+"group": "Profitability",
+"type": "num",
+"unit": ""
+},
+{
+"id": "gross_profit_yoy_growth_fq",
+"label": "Gross Profit Yoy Growth Fq",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "gross_profit_yoy_growth_fy",
+"label": "Gross Profit Yoy Growth Fy",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "gross_profit_yoy_growth_ttm",
+"label": "Gross Profit Yoy Growth Ttm",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "net_income_bef_disc_oper_margin_fy",
+"label": "Net Income Bef Disc Oper Margin Fy",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "net_margin",
+"label": "Net Margin",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "net_margin_fy",
+"label": "Net Margin Fy",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "net_margin_ttm",
+"label": "Net Margin Ttm",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "oper_income_margin_fy",
+"label": "Oper Income Margin Fy",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "operating_margin",
+"label": "Operating Margin",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "operating_margin_fy",
+"label": "Operating Margin Fy",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "operating_margin_ttm",
+"label": "Operating Margin Ttm",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "pre_tax_margin",
+"label": "Pre Tax Margin",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "pre_tax_margin_ttm",
+"label": "Pre Tax Margin Ttm",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "return_on_assets",
+"label": "Return On Assets",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "return_on_assets_fq",
+"label": "Return On Assets Fq",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "return_on_assets_fy",
+"label": "Return On Assets Fy",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "return_on_capital_employed_fq",
+"label": "Return On Capital Employed Fq",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "return_on_capital_employed_fy",
+"label": "Return On Capital Employed Fy",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "return_on_common_equity_fy",
+"label": "Return On Common Equity Fy",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "return_on_common_equity_ttm",
+"label": "Return On Common Equity Ttm",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "return_on_equity",
+"label": "Return On Equity",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "return_on_equity_adjust_to_book_fy",
+"label": "Return On Equity Adjust To Book Fy",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "return_on_equity_adjust_to_book_ttm",
+"label": "Return On Equity Adjust To Book Ttm",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "return_on_equity_fq",
+"label": "Return On Equity Fq",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "return_on_equity_fy",
+"label": "Return On Equity Fy",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "return_on_invested_capital",
+"label": "Return On Invested Capital",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "return_on_invested_capital_fq",
+"label": "Return On Invested Capital Fq",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "return_on_invested_capital_fy",
+"label": "Return On Invested Capital Fy",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "return_on_tang_assets_fq",
+"label": "Return On Tang Assets Fq",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "return_on_tang_assets_fy",
+"label": "Return On Tang Assets Fy",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "return_on_tang_equity_fq",
+"label": "Return On Tang Equity Fq",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "return_on_tang_equity_fy",
+"label": "Return On Tang Equity Fy",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "return_on_total_capital_fq",
+"label": "Return On Total Capital Fq",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "return_on_total_capital_fy",
+"label": "Return On Total Capital Fy",
+"group": "Profitability",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "enterprise_value_current",
+"label": "Enterprise Value Current",
+"group": "Valuation",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "enterprise_value_ebitda_current",
+"label": "Enterprise Value Ebitda Current",
+"group": "Valuation",
+"type": "num",
+"unit": ""
+},
+{
+"id": "enterprise_value_ebitda_ttm",
+"label": "Enterprise Value Ebitda Ttm",
+"group": "Valuation",
+"type": "num",
+"unit": ""
+},
+{
+"id": "enterprise_value_fq",
+"label": "Enterprise Value Fq",
+"group": "Valuation",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "enterprise_value_to_ebit_ttm",
+"label": "Enterprise Value To Ebit Ttm",
+"group": "Valuation",
+"type": "num",
+"unit": ""
+},
+{
+"id": "enterprise_value_to_free_cash_flow_ttm",
+"label": "Enterprise Value To Free Cash Flow Ttm",
+"group": "Valuation",
+"type": "num",
+"unit": ""
+},
+{
+"id": "enterprise_value_to_gross_profit_ttm",
+"label": "Enterprise Value To Gross Profit Ttm",
+"group": "Valuation",
+"type": "num",
+"unit": ""
+},
+{
+"id": "enterprise_value_to_revenue_ttm",
+"label": "Enterprise Value To Revenue Ttm",
+"group": "Valuation",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ipo_market_cap_usd",
+"label": "Ipo Market Cap Usd",
+"group": "Valuation",
+"type": "num",
+"unit": ""
+},
+{
+"id": "market_cap_basic",
+"label": "Market Cap Basic",
+"group": "Valuation",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "market_cap_calc",
+"label": "Market Cap Calc",
+"group": "Valuation",
+"type": "num",
+"unit": ""
+},
+{
+"id": "price_book_current",
+"label": "Price Book Current",
+"group": "Valuation",
+"type": "num",
+"unit": ""
+},
+{
+"id": "price_book_fq",
+"label": "Price Book Fq",
+"group": "Valuation",
+"type": "num",
+"unit": ""
+},
+{
+"id": "price_book_ratio",
+"label": "Price Book Ratio",
+"group": "Valuation",
+"type": "num",
+"unit": ""
+},
+{
+"id": "price_earnings_current",
+"label": "Price Earnings Current",
+"group": "Valuation",
+"type": "num",
+"unit": ""
+},
+{
+"id": "price_earnings_forward_fy",
+"label": "Price Earnings Forward Fy",
+"group": "Valuation",
+"type": "num",
+"unit": ""
+},
+{
+"id": "price_earnings_growth_ttm",
+"label": "Price Earnings Growth Ttm",
+"group": "Valuation",
+"type": "num",
+"unit": ""
+},
+{
+"id": "price_earnings_ttm",
+"label": "Price Earnings Ttm",
+"group": "Valuation",
+"type": "num",
+"unit": ""
+},
+{
+"id": "price_free_cash_flow_current",
+"label": "Price Free Cash Flow Current",
+"group": "Valuation",
+"type": "num",
+"unit": ""
+},
+{
+"id": "price_free_cash_flow_ttm",
+"label": "Price Free Cash Flow Ttm",
+"group": "Valuation",
+"type": "num",
+"unit": ""
+},
+{
+"id": "price_sales",
+"label": "Price Sales",
+"group": "Valuation",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "price_sales_current",
+"label": "Price Sales Current",
+"group": "Valuation",
+"type": "num",
+"unit": ""
+},
+{
+"id": "price_sales_ratio",
+"label": "Price Sales Ratio",
+"group": "Valuation",
+"type": "num",
+"unit": ""
+},
+{
+"id": "sum_for_enterprise_value",
+"label": "Sum For Enterprise Value",
+"group": "Valuation",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "ATR",
+"label": "ATR",
+"group": "Volatility",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ATRP",
+"label": "ATRP",
+"group": "Volatility",
+"type": "num",
+"unit": ""
+},
+{
+"id": "beta_1_year",
+"label": "Beta 1 Year",
+"group": "Volatility",
+"type": "num",
+"unit": ""
+},
+{
+"id": "beta_3_year",
+"label": "Beta 3 Year",
+"group": "Volatility",
+"type": "num",
+"unit": ""
+},
+{
+"id": "beta_5_year",
+"label": "Beta 5 Year",
+"group": "Volatility",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Volatility.D",
+"label": "Volatility D",
+"group": "Volatility",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Volatility.M",
+"label": "Volatility M",
+"group": "Volatility",
+"type": "num",
+"unit": ""
+},
+{
+"id": "Volatility.W",
+"label": "Volatility W",
+"group": "Volatility",
+"type": "num",
+"unit": ""
+},
+{
+"id": "average_volume",
+"label": "Average Volume",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "average_volume_10d_calc",
+"label": "Average Volume 10d Calc",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "average_volume_30d_calc",
+"label": "Average Volume 30d Calc",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "average_volume_60d_calc",
+"label": "Average Volume 60d Calc",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "average_volume_90d_calc",
+"label": "Average Volume 90d Calc",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "AvgValue.Traded_10d",
+"label": "AvgValue Traded 10d",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "AvgValue.Traded_30d",
+"label": "AvgValue Traded 30d",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "AvgValue.Traded_60d",
+"label": "AvgValue Traded 60d",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "AvgValue.Traded_90d",
+"label": "AvgValue Traded 90d",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "diluted_shares_outstanding_fq",
+"label": "Diluted Shares Outstanding Fq",
+"group": "Volume",
+"type": "price",
+"unit": "$"
+},
+{
+"id": "float_shares_outstanding",
+"label": "Float Shares Outstanding",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "float_shares_outstanding_current",
+"label": "Float Shares Outstanding Current",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "float_shares_percent_current",
+"label": "Float Shares Percent Current",
+"group": "Volume",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "ipo_offered_shares",
+"label": "Ipo Offered Shares",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ipo_offered_shares_primary",
+"label": "Ipo Offered Shares Primary",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ipo_offered_shares_secondary",
+"label": "Ipo Offered Shares Secondary",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "ipo_shares_outstanding",
+"label": "Ipo Shares Outstanding",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "postmarket_volume",
+"label": "Postmarket Volume",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "relative_volume",
+"label": "Relative Volume",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "relative_volume_10d_calc",
+"label": "Relative Volume 10d Calc",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "shares_outstanding",
+"label": "Shares Outstanding",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "total_shares_outstanding",
+"label": "Total Shares Outstanding",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "total_shares_outstanding_calculated",
+"label": "Total Shares Outstanding Calculated",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "total_shares_outstanding_current",
+"label": "Total Shares Outstanding Current",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "total_shares_outstanding_fundamental",
+"label": "Total Shares Outstanding Fundamental",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "volume",
+"label": "Volume",
+"group": "Volume",
+"type": "num",
+"unit": ""
+},
+{
+"id": "volume_change",
+"label": "Volume Change",
+"group": "Volume",
+"type": "pct",
+"unit": "%"
+},
+{
+"id": "volume_change_abs",
+"label": "Volume Change Abs",
+"group": "Volume",
+"type": "num",
+"unit": ""
+}
+]
