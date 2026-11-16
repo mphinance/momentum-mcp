@@ -1,5 +1,5 @@
 """
-Technical analysis module using pandas-ta.
+Technical analysis module using fin-primitives (see mcp_server/indicators.py).
 
 Fetches historical data and computes RSI and MACD indicators,
 returning the most recent values alongside price context.
@@ -11,8 +11,8 @@ import logging
 from typing import Any
 
 import pandas as pd
-import pandas_ta as ta
 
+from mcp_server import indicators as ta
 from mcp_server.data import get_historical_data, get_live_price
 
 logger = logging.getLogger(__name__)
@@ -81,11 +81,11 @@ async def analyze_technicals(
         rsi_prev = _extract_at(rsi_series, -2)  # Previous bar RSI for cross detection
 
         macd_df = ta.macd(close, fast=12, slow=26, signal=9)
-        macd_val = _extract_last(macd_df.iloc[:, 0]) if macd_df is not None else None
-        macd_prev = _extract_at(macd_df.iloc[:, 0], -2) if macd_df is not None else None
-        signal_val = _extract_last(macd_df.iloc[:, 1]) if macd_df is not None else None
-        signal_prev = _extract_at(macd_df.iloc[:, 1], -2) if macd_df is not None else None
-        hist_val = _extract_last(macd_df.iloc[:, 2]) if macd_df is not None else None
+        macd_val = _extract_last(macd_df["macd"])
+        macd_prev = _extract_at(macd_df["macd"], -2)
+        signal_val = _extract_last(macd_df["signal"])
+        signal_prev = _extract_at(macd_df["signal"], -2)
+        hist_val = _extract_last(macd_df["histogram"])
 
         # --- EMA Stack (8/21/34/55/89) — Michael's signature ---
         ema_stack = {}
@@ -99,12 +99,12 @@ async def analyze_technicals(
 
         # --- ADX(14) — trend strength + DI components ---
         adx_df = ta.adx(high, low, close, length=14)
-        adx_val = _extract_last(adx_df.iloc[:, 0]) if adx_df is not None else None
-        # DI+ and DI- for directional movement (columns: ADX, DMP, DMN)
-        plus_di = _extract_last(adx_df.iloc[:, 1]) if adx_df is not None and adx_df.shape[1] > 1 else None
-        minus_di = _extract_last(adx_df.iloc[:, 2]) if adx_df is not None and adx_df.shape[1] > 2 else None
-        plus_di_prev = _extract_at(adx_df.iloc[:, 1], -2) if adx_df is not None and adx_df.shape[1] > 1 else None
-        minus_di_prev = _extract_at(adx_df.iloc[:, 2], -2) if adx_df is not None and adx_df.shape[1] > 2 else None
+        adx_val = _extract_last(adx_df["adx"])
+        # DI+ and DI- for directional movement
+        plus_di = _extract_last(adx_df["plus_di"])
+        minus_di = _extract_last(adx_df["minus_di"])
+        plus_di_prev = _extract_at(adx_df["plus_di"], -2)
+        minus_di_prev = _extract_at(adx_df["minus_di"], -2)
 
         # --- ATR(14) — volatility ---
         atr_val = _extract_last(ta.atr(high, low, close, length=14))
@@ -114,14 +114,14 @@ async def analyze_technicals(
 
         # --- Stochastic (14,3,3) ---
         stoch_df = ta.stoch(high, low, close, k=14, d=3, smooth_k=3)
-        stoch_k = _extract_last(stoch_df.iloc[:, 0]) if stoch_df is not None else None
-        stoch_d = _extract_last(stoch_df.iloc[:, 1]) if stoch_df is not None else None
+        stoch_k = _extract_last(stoch_df["k"])
+        stoch_d = _extract_last(stoch_df["d"])
 
         # --- Bollinger Bands (20, 2) ---
         bb_df = ta.bbands(close, length=20, std=2)
-        bb_lower = _extract_last(bb_df.iloc[:, 0]) if bb_df is not None else None
-        bb_mid = _extract_last(bb_df.iloc[:, 1]) if bb_df is not None else None
-        bb_upper = _extract_last(bb_df.iloc[:, 2]) if bb_df is not None else None
+        bb_lower = _extract_last(bb_df["lower"])
+        bb_mid = _extract_last(bb_df["mid"])
+        bb_upper = _extract_last(bb_df["upper"])
 
         # --- CCI(20) ---
         cci_val = _extract_last(ta.cci(high, low, close, length=20))

@@ -135,14 +135,8 @@ git clone https://github.com/mphinance/momentum-mcp.git
 cd momentum-mcp
 python3 -m venv .venv
 source .venv/bin/activate
-# Three-step install: pandas-ta hard-pins numba==0.61.2 which doesn't support
-# Python 3.14, so we install it separately and override numba.
-pip install fastmcp tradingview-screener yfinance pandas mplfinance matplotlib feedparser trafilatura scipy tradingview-ta chromadb requests httpx
-pip install pandas-ta --no-deps
-pip install 'numba>=0.62'
+pip install -r requirements.txt
 ```
-
-> **Why three steps?** `pandas-ta==0.4.71b0` declares `numba==0.61.2` as a hard dependency, but that `numba` version only supports Python `<3.14`. Installing `pandas-ta` with `--no-deps` skips the pin, and `numba>=0.62` (which has Python 3.14 wheels) is fully compatible at runtime — verified working.
 
 Test that everything works:
 
@@ -302,7 +296,7 @@ momentum-mcp/
     ├── server.py            # FastMCP entry point — registers all 101 tools
     ├── screener.py          # TradingView stock scanner
     ├── data.py              # yfinance OHLCV with async wrapper
-    ├── technicals.py        # pandas-ta indicator suite
+    ├── technicals.py        # technical indicator suite (indicators.py)
     ├── charts.py            # mplfinance candlestick + volume charts
     ├── news.py              # feedparser RSS + trafilatura extraction
     ├── edgar.py             # SEC EDGAR client — no API key, User-Agent only
@@ -321,7 +315,7 @@ momentum-mcp/
 | [FastMCP](https://gofastmcp.com/) | MCP server framework (v3.x) |
 | [tradingview-screener](https://pypi.org/project/tradingview-screener/) | Stock screening via TradingView's API |
 | [yfinance](https://pypi.org/project/yfinance/) | Yahoo Finance OHLCV data |
-| [pandas-ta](https://pypi.org/project/pandas-ta/) | 130+ technical indicators |
+| [fin-primitives](https://pypi.org/project/fin-primitives/) | Technical indicators (Rust wheels, TA-Lib definitions) |
 | [mplfinance](https://pypi.org/project/mplfinance/) | Financial chart rendering |
 | [feedparser](https://pypi.org/project/feedparser/) | RSS/Atom feed parsing |
 | [trafilatura](https://pypi.org/project/trafilatura/) | Web article text extraction |
