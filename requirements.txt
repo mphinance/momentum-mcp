@@ -13,14 +13,15 @@ yfinance>=0.2
 # Data manipulation
 pandas>=2.0
 
-# Technical analysis indicators
-# NOTE: pandas-ta hard-pins numba==0.61.2 which doesn't support Python 3.14.
-# Install with --no-deps and use numba>=0.62 instead (verified compatible).
-pandas-ta>=0.3
-numba>=0.62
+# Technical analysis indicators (mcp_server/indicators.py)
+# Prebuilt abi3 wheels for CPython 3.9+ on Linux, macOS and Windows; no numba.
+fin-primitives[pandas]>=3.3
 
 # Candlestick chart rendering
-mplfinance>=0.12
+# mplfinance only publishes pre-releases, so name one or pip skips them all.
+mplfinance>=0.12.10b0
+# mplfinance imports six without declaring it; python-dateutil 4 no longer pulls it in.
+six>=1.16
 matplotlib>=3.7
 
 # News & article extraction

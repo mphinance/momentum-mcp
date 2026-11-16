@@ -147,7 +147,7 @@ def test_no_collision_with_the_rest_of_the_momentum_server():
     there is ever called scan_something, or a scanline tool loses its prefix,
     FastMCP would either raise or silently keep one of the two. Check the
     source without importing server.py, whose other imports (yfinance,
-    pandas-ta, chromadb) are not part of the offline suite.
+    fin-primitives, chromadb) are not part of the offline suite.
     """
     import pathlib
     import re

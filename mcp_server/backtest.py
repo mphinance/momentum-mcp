@@ -1,7 +1,7 @@
 """
 Phase 7 — Backtesting Engine.
 
-Vectorised strategy backtesting with pandas-ta indicators.
+Vectorised strategy backtesting with fin-primitives indicators.
 Strategies are defined as JSON-serialisable condition dicts so the LLM
 can translate natural language → structured rules → replay.
 
@@ -26,8 +26,8 @@ from pathlib import Path
 from typing import Any
 
 import pandas as pd
-import pandas_ta as ta
 
+from mcp_server import indicators as ta
 from mcp_server.data import get_historical_data
 
 logger = logging.getLogger(__name__)
@@ -183,14 +183,14 @@ def _compute_all_indicators(df: pd.DataFrame) -> pd.DataFrame:
     # MACD
     macd_df = ta.macd(close, fast=12, slow=26, signal=9)
     if macd_df is not None:
-        df["macd"] = macd_df.iloc[:, 0].astype(float)
-        df["macd_signal"] = macd_df.iloc[:, 1].astype(float)
-        df["macd_histogram"] = macd_df.iloc[:, 2].astype(float)
+        df["macd"] = macd_df["macd"].astype(float)
+        df["macd_signal"] = macd_df["signal"].astype(float)
+        df["macd_histogram"] = macd_df["histogram"].astype(float)
 
     # ADX
     adx_df = ta.adx(high, low, close, length=14)
     if adx_df is not None:
-        df["adx_14"] = adx_df.iloc[:, 0].astype(float)
+        df["adx_14"] = adx_df["adx"].astype(float)
 
     # ATR
     atr = ta.atr(high, low, close, length=14)
@@ -205,15 +205,15 @@ def _compute_all_indicators(df: pd.DataFrame) -> pd.DataFrame:
     # Stochastic
     stoch_df = ta.stoch(high, low, close, k=14, d=3, smooth_k=3)
     if stoch_df is not None:
-        df["stoch_k"] = stoch_df.iloc[:, 0].astype(float)
-        df["stoch_d"] = stoch_df.iloc[:, 1].astype(float)
+        df["stoch_k"] = stoch_df["k"].astype(float)
+        df["stoch_d"] = stoch_df["d"].astype(float)
 
     # Bollinger Bands
     bb_df = ta.bbands(close, length=20, std=2)
     if bb_df is not None:
-        df["bb_lower"] = bb_df.iloc[:, 0].astype(float)
-        df["bb_mid"] = bb_df.iloc[:, 1].astype(float)
-        df["bb_upper"] = bb_df.iloc[:, 2].astype(float)
+        df["bb_lower"] = bb_df["lower"].astype(float)
+        df["bb_mid"] = bb_df["mid"].astype(float)
+        df["bb_upper"] = bb_df["upper"].astype(float)
 
     # CCI
     cci = ta.cci(high, low, close, length=20)
